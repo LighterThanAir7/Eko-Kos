@@ -1,0 +1,24 @@
+$ff-inter: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+$font-sizes: (
+  900: 3.375rem,  // 54px + h1
+  800: 3rem,      // 48px
+  700: 1.75rem,   // 28px + h4
+  600: 1.5rem,    // 24px
+  500: 1.25rem,   // 20px +
+  400: 1.125rem,  // 18px + base
+  300: 1rem,      // 16px
+  200: 0.75rem    // 12px
+);
+
+// Font Weights
+$fw-400: 400; // normal
+$fw-500: 500; // medium
+$fw-600: 600; // semi bold
+$fw-700: 700; // bold
+$fw-800: 800; // extra bold
+$fw-900: 900; // black
+
+// Line Heights
+$lh-hero-title: 55px;
+$lh-hero-description: 24px;

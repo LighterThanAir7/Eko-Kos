@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('/src/fonts/icomoon.eot?ne4zcr');
+  src:  url('/src/fonts/icomoon.eot?ne4zcr#iefix') format('embedded-opentype'),
+  url('/src/fonts/icomoon.ttf?ne4zcr') format('truetype'),
+  url('/src/fonts/icomoon.woff?ne4zcr') format('woff'),
+  url('/src/fonts/icomoon.svg?ne4zcr#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-axe:before {
+  content: "\e90c";
+}
+.icon-paintbrush:before {
+  content: "\e90d";
+}
+.icon-phone:before {
+  content: "\e900";
+}
+.icon-medal:before {
+  content: "\e901";
+}
+.icon-grass:before {
+  content: "\e902";
+}
+.icon-handshake:before {
+  content: "\e903";
+}
+.icon-email:before {
+  content: "\e904";
+}
+.icon-leaf:before {
+  content: "\e905";
+}
+.icon-euro-coin:before {
+  content: "\e906";
+}
+.icon-hedge-trimmer:before {
+  content: "\e907";
+}
+.icon-people-talking:before {
+  content: "\e908";
+}
+.icon-gear:before {
+  content: "\e909";
+}
+.icon-map-pin:before {
+  content: "\e90a";
+}
+.icon-tree-thin:before {
+  content: "\e90b";
+}
+.icon-calendar:before {
+  content: "\e90e";
+}
+.icon-workspace-trusted:before {
+  content: "\e90f";
+}
+.icon-arrow_left:before {
+  content: "\e910";
+}
+.icon-arrow_right:before {
+  content: "\e911";
+}
+.icon-lawn-mower:before {
+  content: "\e912";
+}
+.icon-gardening-shears:before {
+  content: "\e913";
+}

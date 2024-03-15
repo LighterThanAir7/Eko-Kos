@@ -1,0 +1,41 @@
+@use "../abstract" as *;
+@use "../utilities/button-transition" as u;
+
+.hero {
+  max-width: $hero-width;
+  margin-left: $content-margin-left;
+  letter-spacing: 1.6px;
+  position: absolute;
+  top: 37%;
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__title {
+    width: 90%;
+    font-size: fs(900);
+    line-height: $lh-hero-title;
+    text-transform: uppercase;
+    margin-bottom: size(40);
+  }
+  &__description {
+    margin-bottom: size(52);
+    font-size: fs(500);
+    line-height: $lh-hero-description;
+  }
+  &__link {
+    display: inline-block;
+    padding: size(20) size(48);
+    font-size: fs(300);
+    text-transform: uppercase;
+    color: inherit;
+    border: 2px solid clr(primary, normal);
+    border-radius: 10px;
+    transition: 300ms ease-in-out;
+    &:hover {
+      @extend %button-transition;
+    }
+  }
+}

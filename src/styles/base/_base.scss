@@ -1,0 +1,9 @@
+@use "../abstract" as *;
+
+body {
+  font-family: $ff-inter;
+  font-weight: $fw-400;
+  font-size: fs(400);
+  color: clr(neutral, normal);
+  line-height: 1.5;
+}

@@ -1,0 +1,48 @@
+@use "../abstract" as *;
+
+.step {
+  @include d-flex($ai: center, $g: size(32));
+  &__number {
+    font-family: "AvenirLTStd-Black", serif;
+    font-size: 160px;
+    font-weight: $fw-900;
+    line-height: 1;
+    color: transparent;
+    -webkit-text-stroke: 3px clr(primary, normal);
+    paint-order: stroke fill;
+  }
+  &__content {
+    max-width: 500px;
+  }
+  &__title {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: size(8);
+  }
+  &__desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+  }
+  i {
+    font-size: 100px;
+  }
+}
+
+.step:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.steps > div:nth-child(1) {
+  margin-left: 150px;
+}
+.steps > div:nth-child(2) {
+  margin-left: 300px;
+}
+.steps > div:nth-child(3) {
+  margin-left: 450px;
+}
+.steps > div:nth-child(4) {
+  margin-left: 600px;
+}

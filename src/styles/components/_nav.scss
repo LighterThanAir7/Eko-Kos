@@ -1,0 +1,21 @@
+@use "../abstract" as *;
+@use "../utilities/button-transition" as u;
+
+.nav {
+  @include d-flex($g: size(16));
+  &__link {
+    @include d-flex($jc: center, $ai: center);
+    color: currentColor;
+    text-decoration: none;
+    padding: size(12) size(32);
+    font-size: fs(300);
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    white-space: nowrap;
+    transition: 300ms ease-in-out;
+    &:hover {
+      @extend %button-transition;
+    }
+  }
+}

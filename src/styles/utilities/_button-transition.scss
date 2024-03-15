@@ -1,0 +1,7 @@
+@use "../abstract" as *;
+
+%button-transition {
+  cursor: pointer;
+  border-color: clr(primary, light);
+  background-color: rgba(clr(primary, normal), 40%);
+}

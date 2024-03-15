@@ -1,0 +1,7 @@
+@use "../abstract" as *;
+
+.header {
+  @include d-flex($jc: space-between, $ai: center);
+  position: absolute;
+  top: 20px;
+}

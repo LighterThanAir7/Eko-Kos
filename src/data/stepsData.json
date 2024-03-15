@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Savjetovanje i planiranje",
+    "description": "U ovoj fazi surađujemo s vama kako bismo razumjeli vaše potrebe i ciljeve te izradili detaljan plan rada koji će ih ostvariti",
+    "icon": "people-talking"
+  },
+  {
+    "title": "Priprema i organizacija",
+    "description": "Nakon inicijalne konzultacije, izrađujemo detaljan plan rada koji obuhvaća sve korake potrebne za uspješno obavljanje posla te pripremamo potrebnu opremu i resurse",
+    "icon": "calendar"
+  },
+  {
+    "title": "Izvođenje s preciznošću",
+    "description": "Naš stručni tim preuzima kontrolu i kvalitetno obavlja svaki aspekt posla primjenjujući naša znanja i vještine",
+    "icon": "tree-thin"
+  },
+  {
+    "title": "Zadovoljstvo korisnika",
+    "description": "Nakon završetka posla, provjeravamo vaše zadovoljstvo pruženim uslugama kako bismo osigurali da ste dobili kvalitetnu uslugu koja udovoljava vašim očekivanjima.",
+    "icon": "handshake"
+  }
+]

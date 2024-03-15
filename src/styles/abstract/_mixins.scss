@@ -1,0 +1,52 @@
+@use "sass:meta";
+@use "sass:math";
+@use "sass:map";
+@use "breakpoints" as *;
+
+@mixin mq($size) {
+  @if map.has-key($breakpoints, $size) {
+    $breakpoint: map-get($breakpoints, $size);
+    @media screen and (min-width: $breakpoint) {
+      @content;
+    }
+  } @else if meta.type-of($size) == number {
+    @if math.is-unitless($size) {
+      @error 'when using a number with @mq() make sure to include a unit';
+    } @else {
+      @media screen and (min-width: $size) {
+        @content;
+      }
+    }
+  } @else {
+    @error 'the keyword #{$size} is not in the $breakpoints map';
+  }
+}
+
+@mixin d-flex($d: null, $jc: null, $ai: null, $g: null) {
+  display: flex;
+  flex-direction: $d;
+  justify-content: $jc;
+  align-items: $ai;
+  gap: $g;
+}
+
+@mixin font-face($family, $src, $format, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: "#{$family}";
+    src: url("#{$src}") format('#{$format}');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@mixin stroke($color: #000, $size: 1px) {
+  text-shadow:
+    -#{$size} -#{$size} 0 $color,
+    0         -#{$size} 0 $color,
+    #{$size}  -#{$size} 0 $color,
+    #{$size}   0        0 $color,
+    #{$size}   #{$size} 0 $color,
+    0          #{$size} 0 $color,
+    -#{$size}  #{$size} 0 $color,
+    -#{$size}  0        0 $color;
+}

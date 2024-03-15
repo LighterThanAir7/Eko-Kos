@@ -1,0 +1,30 @@
+@use "../abstract" as *;
+
+.triangle-top-right {
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: 0;
+  border-bottom: 350px solid transparent; /* Height of the triangle */
+  border-right: 350px solid clr(primary, normal); /* Width of the triangle */
+}
+
+.triangle-bottom-left {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 0;
+  bottom: -800px;
+  border-top: 350px solid transparent; /* Height of the triangle */
+  border-left: 350px solid clr(primary, normal); /* Width of the triangle */
+}
+
+.triangle-bottom-left-flipped-x {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 0;
+  bottom: -1150px;
+  border-bottom: 350px solid transparent; /* Height of the triangle */
+  border-left: 350px solid clr(primary, dark); /* Width of the triangle */
+}
