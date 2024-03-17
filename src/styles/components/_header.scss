@@ -4,4 +4,7 @@
   @include d-flex($jc: space-between, $ai: center);
   position: absolute;
   top: 20px;
+  left: 0;
+  width: 100%;
+  padding-inline: 120px;
 }
