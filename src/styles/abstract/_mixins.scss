@@ -50,3 +50,38 @@
     -#{$size}  #{$size} 0 $color,
     -#{$size}  0        0 $color;
 }
+
+@mixin triangle($size, $color, $posX: null, $posY: null) {
+  position: absolute;
+
+  $posX_flipped: null;
+  $posY_flipped: null;
+
+  // Determine flipped positions
+  @if $posX == 'left' {
+    left: 0;
+    $posX_flipped: "right";
+  } @else if $posX == 'right' {
+    right: 0;
+    $posX_flipped: "left";
+  }
+
+  @if $posY == 'top' {
+    top: 0;
+    $posY_flipped: "bottom";
+  } @else if $posY == 'bottom' {
+    bottom: 0;
+    $posY_flipped: "top";
+  }
+
+  // Apply border styles based on calculated positions
+  @if $posX != null and $posY != null {
+    border-#{$posX_flipped}: $size solid transparent;
+    border-#{$posY}: $size solid $color;
+  } @else {
+    // Default triangle pointing to the right if no position is specified
+    border-left: $size solid $color;
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+  }
+}

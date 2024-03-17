@@ -7,3 +7,36 @@ body {
   color: clr(neutral, normal);
   line-height: 1.5;
 }
+
+h2 {
+  font-size: fs(800);
+  font-weight: $fw-600;
+  text-transform: uppercase;
+}
+
+#pocetna,
+#kako-radimo,
+#o-nama,
+#usluge,
+#galerija,
+#cijena {
+  height: 100vh;
+  position: relative;
+  padding-inline: 10vw;
+}
+
+#o-nama {
+  background-color: rgba(128, 0, 128, 0.22);
+}
+
+#usluge {
+  background-color: rgba(76, 181, 169, 0.22);
+}
+
+#galerija {
+  background-color: rgba(193, 171, 114, 0.22);
+}
+
+#cijena {
+  background-color: rgba(234, 23, 142, 0.22);
+}

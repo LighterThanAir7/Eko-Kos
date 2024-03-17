@@ -1,10 +1,13 @@
-export default function SectionTitle ({title}) {
+export default function SectionTitle ({title, type}) {
   return (
-    <div>
-      <h2 className="section-title">{title}</h2>
-      <div className="section-title__decoration">
-        <i></i>
-      </div>
-    </div>
+    <>
+      {type === "fancy" ? (
+        <h2 className="section-title">{title}</h2>
+      ) : (
+        <div className="section-title--">
+          <i></i>
+        </div>
+      )}
+    </>
   )
 }

@@ -1,0 +1,16 @@
+@use "../abstract" as *;
+
+.section-title {
+  position: relative;
+  padding-top: $section-title;
+  margin-bottom: 88px;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 600px;
+    height: 3px;
+    background-color: clr(primary, normal);
+  }
+}

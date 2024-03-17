@@ -139,12 +139,44 @@ body {
   line-height: 1.5;
 }
 
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#pocetna,
+#kako-radimo,
+#o-nama,
+#usluge,
+#galerija,
+#cijena {
+  height: 100vh;
+  position: relative;
+  padding-inline: 10vw;
+}
+
+#o-nama {
+  background-color: rgba(128, 0, 128, 0.22);
+}
+
+#usluge {
+  background-color: rgba(76, 181, 169, 0.22);
+}
+
+#galerija {
+  background-color: rgba(193, 171, 114, 0.22);
+}
+
+#cijena {
+  background-color: rgba(234, 23, 142, 0.22);
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
-  top: 20px;
+  padding-top: 20px;
 }
 
 .logo {
@@ -184,10 +216,11 @@ body {
   top: 37%;
 }
 .hero__img {
-  display: block;
+  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: left;
 }
 .hero__title {
   width: 90%;
@@ -211,6 +244,18 @@ body {
   border-radius: 10px;
   transition: 300ms ease-in-out;
 }
+.steps > div:nth-child(2) {
+  margin-left: calc(9.375rem * (2 - 1));
+}
+
+.steps > div:nth-child(3) {
+  margin-left: calc(9.375rem * (3 - 1));
+}
+
+.steps > div:nth-child(4) {
+  margin-left: calc(9.375rem * (4 - 1));
+}
+
 .step {
   display: flex;
   align-items: center;
@@ -218,9 +263,9 @@ body {
 }
 .step__number {
   font-family: "AvenirLTStd-Black", serif;
-  font-size: 160px;
+  font-size: 8.75rem;
   font-weight: 900;
-  line-height: 1;
+  line-height: 0;
   color: transparent;
   -webkit-text-stroke: 3px #7DA500;
   paint-order: stroke fill;
@@ -242,30 +287,27 @@ body {
 .step i {
   font-size: 100px;
 }
-
 .step:not(:last-child) {
-  margin-bottom: 48px;
+  margin-bottom: 64px;
 }
 
-.steps > div:nth-child(1) {
-  margin-left: 150px;
+.section-title {
+  position: relative;
+  padding-top: 7.5rem;
+  margin-bottom: 88px;
 }
-
-.steps > div:nth-child(2) {
-  margin-left: 300px;
-}
-
-.steps > div:nth-child(3) {
-  margin-left: 450px;
-}
-
-.steps > div:nth-child(4) {
-  margin-left: 600px;
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 600px;
+  height: 3px;
+  background-color: #7DA500;
 }
 
 .page-wrapper {
-  width: 89rem;
-  margin: 0 auto;
+  padding-inline: 15vw;
 }
 
 #pocetna {
@@ -273,33 +315,37 @@ body {
   font-weight: 600;
 }
 
+.bg-leaves {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
 .triangle-top-right {
-  width: 0;
-  height: 0;
   position: absolute;
   right: 0;
-  border-bottom: 350px solid transparent; /* Height of the triangle */
-  border-right: 350px solid #7DA500; /* Width of the triangle */
+  top: 0;
+  border-left: 600px solid transparent;
+  border-top: 600px solid #7DA500;
 }
 
 .triangle-bottom-left {
-  width: 0;
-  height: 0;
   position: absolute;
   left: 0;
-  bottom: -800px;
-  border-top: 350px solid transparent; /* Height of the triangle */
-  border-left: 350px solid #7DA500; /* Width of the triangle */
+  bottom: 0;
+  border-right: 410px solid transparent;
+  border-bottom: 410px solid #7DA500;
 }
 
 .triangle-bottom-left-flipped-x {
-  width: 0;
-  height: 0;
   position: absolute;
   left: 0;
-  bottom: -1150px;
-  border-bottom: 350px solid transparent; /* Height of the triangle */
-  border-left: 350px solid darkblue; /* Width of the triangle */
+  top: 0;
+  border-right: 410px solid transparent;
+  border-top: 410px solid #516B00;
 }
 
 .clr-neutral-light {
@@ -343,11 +389,15 @@ body {
 }
 
 .clr-primary-dark {
-  color: darkblue;
+  color: #516B00;
 }
 
 .bg-primary-dark {
-  background-color: darkblue;
+  background-color: #516B00;
+}
+
+.fs-1000 {
+  font-size: 8.75rem;
 }
 
 .fs-900 {
@@ -355,7 +405,7 @@ body {
 }
 
 .fs-800 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .fs-700 {
@@ -864,6 +914,10 @@ body {
 }
 .padding-inline-52 {
   padding-inline: 3.25rem;
+}
+
+.content-padding-left {
+  padding-left: 7.6875rem;
 }
 
 /*# sourceMappingURL=App.css.map */

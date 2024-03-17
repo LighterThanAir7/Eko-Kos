@@ -9,14 +9,13 @@ import Footer from "./Footer.jsx";
 function App() {
   return (
     <>
-      <main>
-        <Pocetna/>
-        <KakoRadimo/>
-        <ONama/>
-        <Usluge/>
-        <Galerija/>
-        <Cijena/>
-      </main>
+      <img className="hero__img" src="/src/assets/hero.webp" alt=""/>
+      <Pocetna/>
+      <KakoRadimo/>
+      <ONama/>
+      <Usluge/>
+      <Galerija/>
+      <Cijena/>
       <Footer/>
     </>
   )
