@@ -68,10 +68,8 @@
 
   @if $posY == 'top' {
     top: 0;
-    $posY_flipped: "bottom";
   } @else if $posY == 'bottom' {
     bottom: 0;
-    $posY_flipped: "top";
   }
 
   // Apply border styles based on calculated positions
