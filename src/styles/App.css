@@ -156,8 +156,18 @@ h2 {
   padding-inline: 10vw;
 }
 
+#kako-radimo {
+  display: flex;
+  align-items: center;
+}
+
 #o-nama {
-  background-color: rgba(128, 0, 128, 0.22);
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+#o-nama > div {
+  width: 50%;
 }
 
 #usluge {
@@ -291,19 +301,79 @@ h2 {
   margin-bottom: 64px;
 }
 
-.section-title {
-  position: relative;
+.section-header {
   padding-top: 7.5rem;
   margin-bottom: 88px;
 }
-.section-title::after {
+
+.section-title--normal, .section-title--fancy {
+  position: relative;
+}
+.section-title--normal::after, .section-title--normal::before, .section-title--fancy::after, .section-title--fancy::before {
   content: "";
   position: absolute;
+  height: 3px;
+  background-color: #7DA500;
+}
+.section-title--normal::after {
   left: 0;
   bottom: -6px;
   width: 600px;
-  height: 3px;
-  background-color: #7DA500;
+}
+.section-title--fancy::before {
+  left: -150px;
+  bottom: -30px;
+  width: 125px;
+}
+.section-title--fancy::after {
+  left: 150px;
+  bottom: -30px;
+  width: 125px;
+}
+
+.section-fancy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+.section-fancy i {
+  color: #7DA500;
+  font-size: 2rem;
+}
+
+.cards {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid rgba(125, 165, 0, 0.7);
+  border-radius: 10px;
+  padding: 24px;
+}
+.card__icon {
+  color: #7DA500;
+  font-size: 52px;
+  background-color: #f2f2f2;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  margin: 0 auto 0.75rem;
+}
+.card__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.card__text {
+  width: 340px;
+  font-size: 14px;
 }
 
 .page-wrapper {
@@ -435,6 +505,9 @@ h2 {
 .margin-8 {
   margin: 0.5rem;
 }
+.margin-bottom-8 {
+  margin-bottom: 0.5rem;
+}
 .margin-block-start-8 {
   margin-block-start: 0.5rem;
 }
@@ -478,6 +551,9 @@ h2 {
 
 .margin-10 {
   margin: 0.6125rem;
+}
+.margin-bottom-10 {
+  margin-bottom: 0.6125rem;
 }
 .margin-block-start-10 {
   margin-block-start: 0.6125rem;
@@ -523,6 +599,9 @@ h2 {
 .margin-12 {
   margin: 0.75rem;
 }
+.margin-bottom-12 {
+  margin-bottom: 0.75rem;
+}
 .margin-block-start-12 {
   margin-block-start: 0.75rem;
 }
@@ -566,6 +645,9 @@ h2 {
 
 .margin-16 {
   margin: 1rem;
+}
+.margin-bottom-16 {
+  margin-bottom: 1rem;
 }
 .margin-block-start-16 {
   margin-block-start: 1rem;
@@ -611,6 +693,9 @@ h2 {
 .margin-18 {
   margin: 1.125rem;
 }
+.margin-bottom-18 {
+  margin-bottom: 1.125rem;
+}
 .margin-block-start-18 {
   margin-block-start: 1.125rem;
 }
@@ -654,6 +739,9 @@ h2 {
 
 .margin-20 {
   margin: 1.25rem;
+}
+.margin-bottom-20 {
+  margin-bottom: 1.25rem;
 }
 .margin-block-start-20 {
   margin-block-start: 1.25rem;
@@ -699,6 +787,9 @@ h2 {
 .margin-32 {
   margin: 2rem;
 }
+.margin-bottom-32 {
+  margin-bottom: 2rem;
+}
 .margin-block-start-32 {
   margin-block-start: 2rem;
 }
@@ -742,6 +833,9 @@ h2 {
 
 .margin-36 {
   margin: 2.25rem;
+}
+.margin-bottom-36 {
+  margin-bottom: 2.25rem;
 }
 .margin-block-start-36 {
   margin-block-start: 2.25rem;
@@ -787,6 +881,9 @@ h2 {
 .margin-40 {
   margin: 2.5rem;
 }
+.margin-bottom-40 {
+  margin-bottom: 2.5rem;
+}
 .margin-block-start-40 {
   margin-block-start: 2.5rem;
 }
@@ -830,6 +927,9 @@ h2 {
 
 .margin-48 {
   margin: 3rem;
+}
+.margin-bottom-48 {
+  margin-bottom: 3rem;
 }
 .margin-block-start-48 {
   margin-block-start: 3rem;
@@ -875,6 +975,9 @@ h2 {
 .margin-52 {
   margin: 3.25rem;
 }
+.margin-bottom-52 {
+  margin-bottom: 3.25rem;
+}
 .margin-block-start-52 {
   margin-block-start: 3.25rem;
 }
@@ -914,6 +1017,53 @@ h2 {
 }
 .padding-inline-52 {
   padding-inline: 3.25rem;
+}
+
+.margin-80 {
+  margin: 5rem;
+}
+.margin-bottom-80 {
+  margin-bottom: 5rem;
+}
+.margin-block-start-80 {
+  margin-block-start: 5rem;
+}
+.margin-block-end-80 {
+  margin-block-end: 5rem;
+}
+.margin-block-80 {
+  margin-block: 5rem;
+}
+.margin-inline-start-80 {
+  margin-inline-start: 5rem;
+}
+.margin-inline-end-80 {
+  margin-inline-end: 5rem;
+}
+.margin-inline-80 {
+  margin-inline: 5rem;
+}
+
+.padding-80 {
+  padding: 5rem;
+}
+.padding-block-start-80 {
+  padding-block-start: 5rem;
+}
+.padding-block-end-80 {
+  padding-block-end: 5rem;
+}
+.padding-block-80 {
+  padding-block: 5rem;
+}
+.padding-inline-start-80 {
+  padding-inline-start: 5rem;
+}
+.padding-inline-end-80 {
+  padding-inline-end: 5rem;
+}
+.padding-inline-80 {
+  padding-inline: 5rem;
 }
 
 .content-padding-left {

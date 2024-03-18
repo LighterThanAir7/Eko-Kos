@@ -1,16 +1,47 @@
 @use "../abstract" as *;
 
-.section-title {
-  position: relative;
+.section-header {
   padding-top: $section-title;
   margin-bottom: 88px;
-  &::after {
-    content: "";
-    position: absolute;
+}
+
+.section-title {
+  &--normal,
+  &--fancy {
+    position: relative;
+
+    &::after, &::before {
+      content: "";
+      position: absolute;
+      height: 3px;
+      background-color: clr(primary, normal);
+    }
+  }
+
+  &--normal::after {
     left: 0;
     bottom: -6px;
     width: 600px;
-    height: 3px;
-    background-color: clr(primary, normal);
+  }
+
+  &--fancy {
+    &::before {
+      left: -150px;
+      bottom: -30px;
+      width: 125px;
+    }
+    &::after {
+      left: 150px;
+      bottom: -30px;
+      width: 125px;
+    }
+  }
+}
+
+.section-fancy {
+  @include d-flex($d: column, $ai: center, $g: size(12));
+  i {
+    color: clr(primary, normal);
+    font-size: fs(800);
   }
 }

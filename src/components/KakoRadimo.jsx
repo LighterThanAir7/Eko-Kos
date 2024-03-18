@@ -8,7 +8,7 @@ export default function KakoRadimo () {
       <div className="triangle-top-right" role="presentation"></div>
       <div className="triangle-bottom-left" role="presentation"></div>
       <div className="content-padding-left">
-        <SectionTitle title="Kako radimo" type="fancy"/>
+        <SectionTitle title="Kako radimo" type="normal"/>
         <Steps/>
       </div>
     </section>

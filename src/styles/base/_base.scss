@@ -25,8 +25,15 @@ h2 {
   padding-inline: 10vw;
 }
 
+#kako-radimo {
+  @include d-flex($ai: center)
+}
+
 #o-nama {
-  background-color: rgba(128, 0, 128, 0.22);
+  @include d-flex($g: size(80), $ai: center);
+  & > div {
+    width: 50%;
+  }
 }
 
 #usluge {
