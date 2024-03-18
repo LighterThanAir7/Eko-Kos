@@ -1,0 +1,22 @@
+[
+  {
+    "title": "15+ Godina iskustva",
+    "description": "Više od 15 godina iskustva osigurava stručnost i pouzdanost u svakom projektu.",
+    "icon": "grass"
+  },
+  {
+    "title": "Kvalitetna usluga",
+    "description": "Jamčimo vrhunsku kvalitetu u svakom koraku naše usluge.",
+    "icon": "hedge-trimmer"
+  },
+  {
+    "title": "Profesionalno uređivanje",
+    "description": "Profesionalno uređujemo prostore uz pažljiv pristup detaljima i estetskih vrijednosti.",
+    "icon": "gardening-shears"
+  },
+  {
+    "title": "Pouzdan partner",
+    "description": "Partnerstvo zasnovano na povjerenju i pouzdanosti u svakom poslu.",
+    "icon": "axe"
+  }
+]

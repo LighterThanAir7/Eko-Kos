@@ -10,6 +10,8 @@
   border: 1px solid rgba(clr(primary, normal), 70%);
   border-radius: 10px;
   padding: 24px;
+  flex: 1;
+  flex-basis: 45%;
   &__icon {
     color: clr(primary, normal);
     font-size: 52px;
@@ -26,7 +28,11 @@
     margin-bottom: size(8);
   }
   &__text {
-    width: 340px;
+    width: 100%;
     font-size: 14px;
   }
+}
+
+.card-2 {
+
 }

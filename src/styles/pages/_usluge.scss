@@ -1,0 +1,6 @@
+@use "../abstract" as *;
+
+#usluge {
+  @include d-flex($d: column, $ai: center, $jc: center);
+  color: clr(neutral, light);
+}

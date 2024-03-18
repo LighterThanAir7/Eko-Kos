@@ -1,0 +1,15 @@
+@use "../abstract" as *;
+
+.image-container {
+  position: relative;
+
+  &::before {
+    content: '';
+    z-index: 2;
+    @include triangle(125px, white, "left", "top");
+  }
+
+  img {
+    border-radius: 0 size(32) size(32) size(32);
+  }
+}

@@ -20,24 +20,9 @@ h2 {
 #usluge,
 #galerija,
 #cijena {
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   padding-inline: 10vw;
-}
-
-#kako-radimo {
-  @include d-flex($ai: center)
-}
-
-#o-nama {
-  @include d-flex($g: size(80), $ai: center);
-  & > div {
-    width: 50%;
-  }
-}
-
-#usluge {
-  background-color: rgba(76, 181, 169, 0.22);
 }
 
 #galerija {

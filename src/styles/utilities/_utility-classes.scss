@@ -1,0 +1,22 @@
+@use "../abstract" as *;
+
+.content-padding-left {
+  padding-left: $content-padding-left;
+}
+
+.flex-basis-50 {
+  flex-basis: 50%;
+}
+
+.color-white {
+  * {
+    color: white !important
+  };
+  h2 {
+    &::before,
+    &::after {
+      color: inherit !important;
+      background-color: white;
+    }
+  }
+}

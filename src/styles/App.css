@@ -151,27 +151,9 @@ h2 {
 #usluge,
 #galerija,
 #cijena {
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   padding-inline: 10vw;
-}
-
-#kako-radimo {
-  display: flex;
-  align-items: center;
-}
-
-#o-nama {
-  display: flex;
-  align-items: center;
-  gap: 5rem;
-}
-#o-nama > div {
-  width: 50%;
-}
-
-#usluge {
-  background-color: rgba(76, 181, 169, 0.22);
 }
 
 #galerija {
@@ -353,6 +335,8 @@ h2 {
   border: 1px solid rgba(125, 165, 0, 0.7);
   border-radius: 10px;
   padding: 24px;
+  flex: 1;
+  flex-basis: 45%;
 }
 .card__icon {
   color: #7DA500;
@@ -372,7 +356,7 @@ h2 {
   margin-bottom: 0.5rem;
 }
 .card__text {
-  width: 340px;
+  width: 100%;
   font-size: 14px;
 }
 
@@ -385,7 +369,12 @@ h2 {
   font-weight: 600;
 }
 
-.bg-leaves {
+#kako-radimo {
+  display: flex;
+  align-items: center;
+}
+
+.bg-image {
   position: absolute;
   left: 0;
   width: 100%;
@@ -416,6 +405,33 @@ h2 {
   top: 0;
   border-right: 410px solid transparent;
   border-top: 410px solid #516B00;
+}
+
+#o-nama {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 5rem;
+  padding-block: 5rem;
+}
+#o-nama img {
+  max-height: 736px;
+  position: relative;
+}
+#o-nama img::after {
+  content: "";
+  position: absolute;
+  position: absolute;
+  border-: 400xp solid transparent;
+  border-left: 400xp solid white;
+}
+
+#usluge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
 }
 
 .clr-neutral-light {
@@ -1066,8 +1082,36 @@ h2 {
   padding-inline: 5rem;
 }
 
+.image-container {
+  position: relative;
+}
+.image-container::before {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-right: 125px solid transparent;
+  border-top: 125px solid white;
+}
+.image-container img {
+  border-radius: 0 2rem 2rem 2rem;
+}
+
 .content-padding-left {
   padding-left: 7.6875rem;
+}
+
+.flex-basis-50 {
+  flex-basis: 50%;
+}
+
+.color-white * {
+  color: white !important;
+}
+.color-white h2::before, .color-white h2::after {
+  color: inherit !important;
+  background-color: white;
 }
 
 /*# sourceMappingURL=App.css.map */

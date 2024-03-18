@@ -3,3 +3,26 @@
 .triangle-bottom-left-flipped-x {
   @include triangle(410px, clr(primary, dark), "left", "top");
 }
+
+#o-nama {
+  @include d-flex($jc: center, $ai: flex-end, $g: size(80));
+  padding-block: size(80);
+
+  div {
+
+  }
+
+  img {
+    max-height: 736px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      @include triangle(400xp, white, top, left);
+    }
+  }
+}
+
+#o-nama >  {
+  flex-basis: 50%;
+}
