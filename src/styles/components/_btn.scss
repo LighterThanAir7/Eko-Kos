@@ -1,0 +1,19 @@
+@use "../abstract" as *;
+
+.btn {
+  background-color: clr(primary, normal-2);
+  text-align: center;
+  border: 3px solid clr(primary, normal-2);
+  width: 100%;
+  padding-block: size(12);
+  font-weight: $fw-700;
+  font-size: fs(500);
+  color: clr(neutral, light);
+  border-radius: 10px;
+  transition: 300ms ease-in-out;
+  &:hover {
+    background-color: clr(primary, light-2);
+    color: clr(neutral, dark);
+    cursor: pointer;
+  }
+}

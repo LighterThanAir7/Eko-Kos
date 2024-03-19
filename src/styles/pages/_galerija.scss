@@ -1,0 +1,5 @@
+@use "../abstract" as *;
+
+#galerija {
+  @include d-flex($jc: center, $ai: center, $g: size(80))
+}

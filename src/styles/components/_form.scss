@@ -1,0 +1,28 @@
+@use "../abstract" as *;
+
+.form {
+  &__row {
+    @include d-flex($jc: space-between, $g: size(32));
+  }
+  &__input {
+    padding: size(20) size(24);
+    border: 2px solid clr(neutral, normal-2);
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: size(32);
+    transition: 300ms ease-in-out;
+    outline: 2px solid transparent;
+    &:hover,
+    &:focus, {
+      color: clr(neutral, dark);
+      border: 2px solid clr(primary, normal);
+      background-color: rgba(clr(primary, normal), 10%);
+    }
+    &:focus {
+      outline: 2px solid clr(primary, normal);
+    }
+    &--has-text {
+      background-color: rgba(clr(primary, normal), 10%);
+    }
+  }
+}

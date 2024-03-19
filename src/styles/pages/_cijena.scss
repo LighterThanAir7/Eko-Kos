@@ -1,0 +1,9 @@
+@use "../abstract" as *;
+
+#cijena {
+  padding-block: 10rem;
+}
+
+#cijena > div {
+  @include d-flex($jc: center, $g: size(80))
+}

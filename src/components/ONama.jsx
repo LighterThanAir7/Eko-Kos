@@ -5,7 +5,7 @@ export default function ONama () {
   return (
     <section id="o-nama">
       <span className="triangle-bottom-left-flipped-x" role="presentation"></span>
-      <div className="image-container">
+      <div className="image-container image-container--corner-top-left-cut">
         <img src="/src/assets/kosnja-trave.webp" alt=""/>
       </div>
       <div className="flex-basis-50">

@@ -3,13 +3,15 @@
 .image-container {
   position: relative;
 
-  &::before {
-    content: '';
-    z-index: 2;
-    @include triangle(125px, white, "left", "top");
+  &--corner-top-left-cut {
+    &::before {
+      content: '';
+      z-index: 2;
+      @include triangle(125px, white, "left", "top");
+    }
   }
 
   img {
-    border-radius: 0 size(32) size(32) size(32);
+    border-radius: size(32);
   }
 }
