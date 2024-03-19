@@ -14,7 +14,7 @@ export default function Galerija () {
         <button className="btn">Pokreni galeriju</button>
       </div>
       <div className="image-container">
-        <img src="/src/assets/galerija_cover.webp" alt=""/>
+        <img src="/src/assets/galerija-cover.webp" alt=""/>
       </div>
     </section>
   )

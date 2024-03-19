@@ -156,10 +156,6 @@ h2 {
   padding-inline: 10vw;
 }
 
-#galerija {
-  background-color: rgba(193, 171, 114, 0.22);
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -446,6 +442,90 @@ h2 {
   background-color: rgba(125, 165, 0, 0.1);
 }
 
+footer {
+  position: relative;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #232323;
+  color: #fff;
+  padding: 80px 20px 5rem;
+  padding-inline: 5vw;
+  font-size: 1rem;
+}
+.footer .logo {
+  margin-bottom: 2rem;
+}
+.footer__branding-text {
+  font-size: 0.875rem;
+  max-width: 400px;
+  margin-bottom: 2rem;
+}
+.footer-section {
+  z-index: 2;
+}
+.footer-section__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.footer-section__list {
+  list-style: none;
+}
+.footer-section__item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-section__item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.footer-section__item i {
+  font-size: 1.75rem;
+  color: #7DA500;
+}
+.footer__cover {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: lighten;
+}
+
+.copyright {
+  background-color: #232323;
+  color: #BBBBBB;
+  text-align: center;
+  padding: 1.25rem;
+  font-size: 0.875rem;
+  z-index: 2;
+}
+
+.attribution {
+  font-size: 10px;
+  color: #BBBBBB;
+}
+.attribution__title {
+  margin-bottom: 0.5rem;
+}
+.attribution__list {
+  margin-left: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-size: 10px;
+  color: #BBBBBB;
+}
+.attribution a {
+  color: inherit;
+  text-decoration: none;
+}
+.attribution a:hover {
+  text-decoration: underline;
+}
+
 .page-wrapper {
   padding-inline: 15vw;
 }
@@ -533,6 +613,7 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: 5rem;
+  background-color: rgba(193, 171, 114, 0.22);
 }
 
 #cijena {
@@ -551,6 +632,14 @@ h2 {
 
 .bg-neutral-light {
   background-color: #fff;
+}
+
+.clr-neutral-light-2 {
+  color: #BBBBBB;
+}
+
+.bg-neutral-light-2 {
+  background-color: #BBBBBB;
 }
 
 .clr-neutral-normal {
@@ -658,7 +747,7 @@ h2 {
 }
 
 .fs-200 {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 
 .margin-8 {
@@ -988,6 +1077,53 @@ h2 {
 }
 .padding-inline-24 {
   padding-inline: 1.5rem;
+}
+
+.margin-28 {
+  margin: 1.75rem;
+}
+.margin-bottom-28 {
+  margin-bottom: 1.75rem;
+}
+.margin-block-start-28 {
+  margin-block-start: 1.75rem;
+}
+.margin-block-end-28 {
+  margin-block-end: 1.75rem;
+}
+.margin-block-28 {
+  margin-block: 1.75rem;
+}
+.margin-inline-start-28 {
+  margin-inline-start: 1.75rem;
+}
+.margin-inline-end-28 {
+  margin-inline-end: 1.75rem;
+}
+.margin-inline-28 {
+  margin-inline: 1.75rem;
+}
+
+.padding-28 {
+  padding: 1.75rem;
+}
+.padding-block-start-28 {
+  padding-block-start: 1.75rem;
+}
+.padding-block-end-28 {
+  padding-block-end: 1.75rem;
+}
+.padding-block-28 {
+  padding-block: 1.75rem;
+}
+.padding-inline-start-28 {
+  padding-inline-start: 1.75rem;
+}
+.padding-inline-end-28 {
+  padding-inline-end: 1.75rem;
+}
+.padding-inline-28 {
+  padding-inline: 1.75rem;
 }
 
 .margin-32 {

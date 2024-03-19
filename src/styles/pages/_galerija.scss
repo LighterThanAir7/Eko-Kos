@@ -1,5 +1,6 @@
 @use "../abstract" as *;
 
 #galerija {
-  @include d-flex($jc: center, $ai: center, $g: size(80))
+  @include d-flex($jc: center, $ai: center, $g: size(80));
+  background-color: rgba(193, 171, 114, 0.22);
 }

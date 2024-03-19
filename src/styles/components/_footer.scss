@@ -1,0 +1,87 @@
+@use "../abstract" as *;
+
+footer {
+  position: relative;
+}
+
+.footer {
+  @include d-flex($jc: space-around);
+  background-color: clr(neutral, normal);
+  color: clr(neutral, light);
+  padding: 80px 20px size(80);
+  padding-inline: 5vw;
+  font-size: fs(300);
+  & .logo {
+    margin-bottom: size(32);
+  }
+  &__branding {
+    &-text {
+      font-size: fs(200);
+      max-width: 400px;
+      margin-bottom: size(32);
+    }
+  }
+  &-section {
+    z-index: 2;
+    &__title {
+      font-size: fs(500);
+      font-weight: $fw-700;
+      text-transform: uppercase;
+      margin-bottom: size(32);
+    }
+    &__list {
+      list-style: none;
+    }
+    &__item {
+      @include d-flex($ai: center, $g: size(16));
+      &:not(:last-child) {
+        margin-bottom: size(16);
+      }
+      i {
+        font-size: size(28);
+        color: clr(primary, normal)
+      }
+    }
+  }
+  &__cover {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: lighten;
+  }
+}
+
+.copyright {
+  background-color: clr(neutral, normal);
+  color: clr(neutral, light-2);
+  text-align: center;
+  padding: size(20);
+  font-size: fs(200);
+  z-index: 2;
+}
+
+.attribution {
+  font-size: 10px;
+  color: clr(neutral, light-2);
+  &__title {
+    margin-bottom: size(8);
+  }
+  &__subtitle {
+
+  }
+  &__list {
+    margin-left: size(20);
+    margin-bottom: size(8);
+    font-size: 10px;
+    color: clr(neutral, light-2);
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
