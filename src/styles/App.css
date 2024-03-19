@@ -326,6 +326,7 @@ h2 {
 
 .cards {
   display: flex;
+  justify-content: center;
   gap: 2.5rem;
   flex-wrap: wrap;
 }
@@ -358,6 +359,39 @@ h2 {
 .card__text {
   width: 100%;
   font-size: 14px;
+}
+
+.card-2 {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 700px;
+}
+.card-2__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7DA500;
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  font-size: 3.375rem;
+  flex-shrink: 0;
+}
+.card-2__content {
+  color: #111212;
+}
+.card-2__title {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #103A0C;
+}
+.card-2__text {
+  line-height: 20px;
 }
 
 .page-wrapper {
@@ -412,7 +446,7 @@ h2 {
   justify-content: center;
   align-items: flex-end;
   gap: 5rem;
-  padding-block: 5rem;
+  padding-block: 10rem;
 }
 #o-nama img {
   max-height: 736px;
@@ -432,6 +466,14 @@ h2 {
   justify-content: center;
   align-items: center;
   color: #fff;
+  padding-block: 10rem;
+}
+
+.usluge__description {
+  max-width: 620px;
+  font-size: 22px;
+  margin-bottom: 3.25rem;
+  text-align: center;
 }
 
 .clr-neutral-light {
@@ -480,6 +522,14 @@ h2 {
 
 .bg-primary-dark {
   background-color: #516B00;
+}
+
+.clr-primary-dark-2 {
+  color: #103A0C;
+}
+
+.bg-primary-dark-2 {
+  background-color: #103A0C;
 }
 
 .fs-1000 {

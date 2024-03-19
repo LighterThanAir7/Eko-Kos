@@ -1,22 +1,22 @@
 [
   {
-    "title": "15+ Godina iskustva",
-    "description": "Više od 15 godina iskustva osigurava stručnost i pouzdanost u svakom projektu.",
+    "title": "Košnja trave",
+    "description": "Pružamo preciznu košnju s akumulatorskim uređajima za besprijekoran izgled vaše okućnice. Naša tehnika osigurava ravnomjernu travu bez oštećenja.",
     "icon": "grass"
   },
   {
-    "title": "Kvalitetna usluga",
-    "description": "Jamčimo vrhunsku kvalitetu u svakom koraku naše usluge.",
+    "title": "Šišanje živice",
+    "description": "Održavamo uredne živice uz korištenje akumulatorskih škara za precizno i estetski zadovoljavajuće rezultate.",
     "icon": "hedge-trimmer"
   },
   {
-    "title": "Profesionalno uređivanje",
-    "description": "Profesionalno uređujemo prostore uz pažljiv pristup detaljima i estetskih vrijednosti.",
+    "title": "Orezivanje cvijeća",
+    "description": "Pažljivo oblikujemo i njegujemo vaše cvjetne aranžmane kako bi istaknuli  njihovu prirodnu ljepotu.",
     "icon": "gardening-shears"
   },
   {
-    "title": "Pouzdan partner",
-    "description": "Partnerstvo zasnovano na povjerenju i pouzdanosti u svakom poslu.",
+    "title": "Rušenje drveća",
+    "description": "Sigurno i učinkovito rušimo drveće uz poštivanje okoliša i sigurnosnih  standarda. Naša ekipa osigurava temeljito uklanjanje s minimalnim rizikom.",
     "icon": "axe"
   }
 ]

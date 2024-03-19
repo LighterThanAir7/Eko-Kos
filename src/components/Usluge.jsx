@@ -7,7 +7,7 @@ export default function Usluge () {
       <img className="bg-image" src="/src/assets/grass-bg.webp" alt="Close up of fresh grass as background"/>
       <SectionTitle title="Usluge" type="fancy" white/>
 
-      <p>
+      <p className="usluge__description">
         Istražite naše vrhunske usluge za uređenje okućnica, vikendica i  voćnjaka. Pouzdano i ekološki osvješteno, zadovoljstvo zajamčeno.
       </p>
 

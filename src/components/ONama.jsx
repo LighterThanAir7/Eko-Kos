@@ -1,5 +1,3 @@
-import KakoRadimo from "./SectionTitle.jsx";
-import ONamaCard from "./ONamaCard.jsx";
 import SectionTitle from "./SectionTitle.jsx";
 import ONamaCards from "./ONamaCards.jsx";
 

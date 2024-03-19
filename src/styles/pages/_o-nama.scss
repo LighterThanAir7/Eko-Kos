@@ -6,7 +6,7 @@
 
 #o-nama {
   @include d-flex($jc: center, $ai: flex-end, $g: size(80));
-  padding-block: size(80);
+  padding-block: 10rem;
 
   div {
 
