@@ -1,6 +1,7 @@
 import SectionTitle from "./SectionTitle.jsx";
 import Input from "./Input.jsx";
 import Textarea from "./Textarea.jsx";
+import oldLogo from "/src/assets/old-logo.jpg"
 
 export default function Cijena () {
   return (
@@ -17,7 +18,7 @@ export default function Cijena () {
           <p>
             Prilagodljivost i transparentnost su od najveće važnosti u našem procesu suranje. Također možete ispunite obrazac s vašim pitanjem, a mi ćemo vam se javiti u najkraćem mogućem roku.
           </p>
-          <img src="/src/assets/old-logo.jpg" alt=""/>
+          <img src={oldLogo} alt=""/>
           <h3>Vaše zadovoljstvo je naš prioritet !</h3>
         </div>
         <form className="form flex-basis-50">

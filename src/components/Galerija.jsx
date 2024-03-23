@@ -1,4 +1,5 @@
 import SectionTitle from "./SectionTitle.jsx";
+import galerijaCover from "/src/assets/galerija-cover.webp"
 
 export default function Galerija () {
   return (
@@ -14,7 +15,7 @@ export default function Galerija () {
         <button className="btn">Pokreni galeriju</button>
       </div>
       <div className="image-container">
-        <img src="/src/assets/galerija-cover.webp" alt=""/>
+        <img src={galerijaCover} alt=""/>
       </div>
     </section>
   )

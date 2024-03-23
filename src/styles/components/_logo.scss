@@ -1,4 +1,10 @@
+@use "../abstract" as *;
+
 .logo {
   width: 100%;
-  max-width: 460px;
+  max-width: 420px;
+  min-width: 300px;
+  @include mq(xxl) {
+    max-width: 300px;
+  }
 }

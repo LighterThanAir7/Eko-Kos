@@ -1,8 +1,16 @@
 @use "../abstract" as *;
 
 #kako-radimo {
-  @include d-flex($ai: center);
+  @include d-flex($jc: center, $ai: center);
+  min-height: 100vh;
+  position: relative;
+  padding: $px-md $px-sm;
+  @include mq(md) {
+    padding-inline: $px-xs;
+  }
 }
+
+
 
 .bg-image {
   position: absolute;
@@ -14,9 +22,9 @@
 }
 
 .triangle-top-right {
-  @include triangle(600px, clr(primary, normal), "right", "top")
+  @include triangle(400px, clr(primary, normal), "right", "top");
 }
 
 .triangle-bottom-left {
-  @include triangle(410px, clr(primary, normal), "left", "bottom")
+  @include triangle(400px, clr(primary, normal), "left", "bottom")
 }

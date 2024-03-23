@@ -1,15 +1,13 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('/src/fonts/icomoon.eot?ne4zcr');
-  src:  url('/src/fonts/icomoon.eot?ne4zcr#iefix') format('embedded-opentype'),
-  url('/src/fonts/icomoon.ttf?ne4zcr') format('truetype'),
-  url('/src/fonts/icomoon.woff?ne4zcr') format('woff'),
-  url('/src/fonts/icomoon.svg?ne4zcr#icomoon') format('svg');
+  src: url('/fonts/icomoon.ttf?ne4zcr') format('truetype'),
+  url('/fonts/icomoon.woff?ne4zcr') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
+/* purgecss start ignore */
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -24,6 +22,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/* purgecss end ignore */
 
 .icon-axe:before {
   content: "\e90c";
@@ -40,7 +39,7 @@
 .icon-grass:before {
   content: "\e902";
 }
-.icon-handshake:before {
+.icon-handshake-outline:before {
   content: "\e903";
 }
 .icon-email:before {

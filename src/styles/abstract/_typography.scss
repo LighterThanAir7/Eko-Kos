@@ -3,13 +3,15 @@ $ff-inter: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 $font-sizes: (
   1000: 8.75rem,  // 140px - Kako Radimo Steps
   900: 3.375rem,  // 54px + h1
+  850: 2.75rem,   // 44px
   800: 2rem,      // 36px
   700: 1.75rem,   // 28px + h4
   600: 1.5rem,    // 24px
   500: 1.25rem,   // 20px +
   400: 1.125rem,  // 18px + base
   300: 1rem,      // 16px +
-  200: 0.875rem   // 14px +
+  200: 0.875rem,  // 14px +
+  100: 0.75rem    // 12px +
 );
 
 // Font Weights
@@ -22,4 +24,6 @@ $fw-900: 900; // black
 
 // Line Heights
 $lh-hero-title: 55px;
+$lh-hero-title--small: 35px;
 $lh-hero-description: 24px;
+$lh-hero-description--small: 20px;

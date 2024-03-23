@@ -9,7 +9,7 @@ export default function Hero () {
         očuvanju ljepote prirode bez kompromisa. S ponosom nudimo širok raspon usluga, od košnje trave do uređenja
         voćnjaka
       </p>
-      <a className="hero__link">Pročitaj više</a>
+      <a href="#kako-radimo" className="hero__link">Pročitaj više</a>
     </div>
   )
 }

@@ -1,16 +1,12 @@
 @use "../abstract" as *;
 
 .triangle-bottom-left-flipped-x {
-  @include triangle(410px, clr(primary, dark), "left", "top");
+  @include triangle(400px, clr(primary, dark), "left", "top");
 }
 
 #o-nama {
   @include d-flex($jc: center, $ai: flex-end, $g: size(80));
   padding-block: 10rem;
-
-  div {
-
-  }
 
   img {
     max-height: 736px;

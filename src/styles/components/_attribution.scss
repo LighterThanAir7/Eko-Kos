@@ -1,0 +1,81 @@
+@use "../abstract" as *;
+
+body.active-modal {
+  overflow-y: hidden;
+}
+
+.attribution {
+  font-size: fs(100);
+  color: clr(neutral, light-2);
+  max-width: 350px;
+}
+
+.btn-modal {
+  color: inherit;
+  text-decoration: underline;
+  background-color: unset;
+  border: unset;
+  &:hover {
+    color: clr(neutral, light);
+    cursor: pointer;
+  }
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 10;
+  background-color: clr(neutral, normal);
+  overflow-y: scroll;
+  &__content {
+    position: absolute;
+    padding: size(24) size(32);
+    width: 100%;
+    margin: 0 auto;
+    z-index: 20;
+  }
+  &__heading {
+    @include d-flex($jc: space-between, $ai: center)
+  }
+  &__title {
+    margin-bottom: size(24);
+    position: relative;
+    &:after {
+      background-color: clr(neutral, light);
+    }
+  }
+  &__subtitle {
+    font-size: fs(600);
+    margin-bottom: size(24);
+    position: relative;
+    &:after {
+      background-color: #3c3c3c;
+    }
+  }
+  &__title::after,
+  &__subtitle::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+  }
+  &__close {
+    height: fit-content;
+    padding: size(12);
+    cursor: pointer;
+  }
+  &__list {
+    margin-left: size(20);
+    margin-bottom: size(20);
+  }
+  a {
+    color: clr(primary, normal);
+  }
+}

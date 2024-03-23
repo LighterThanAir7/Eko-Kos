@@ -1,19 +1,20 @@
 @use "sass:meta";
 @use "sass:math";
 @use "sass:map";
+@use "sizes" as *;
 @use "breakpoints" as *;
 
 @mixin mq($size) {
   @if map.has-key($breakpoints, $size) {
     $breakpoint: map-get($breakpoints, $size);
-    @media screen and (min-width: $breakpoint) {
+    @media screen and (max-width: $breakpoint) {
       @content;
     }
   } @else if meta.type-of($size) == number {
     @if math.is-unitless($size) {
       @error 'when using a number with @mq() make sure to include a unit';
     } @else {
-      @media screen and (min-width: $size) {
+      @media screen and (max-width: $size) {
         @content;
       }
     }
@@ -52,12 +53,12 @@
 }
 
 @mixin triangle($size, $color, $posX: null, $posY: null) {
-  position: absolute;
-
+  $reduceStep: 100;
   $posX_flipped: null;
-  $posY_flipped: null;
 
   // Determine flipped positions
+  position: absolute;
+
   @if $posX == 'left' {
     left: 0;
     $posX_flipped: "right";
@@ -72,14 +73,35 @@
     bottom: 0;
   }
 
-  // Apply border styles based on calculated positions
+  // Triangle styles
   @if $posX != null and $posY != null {
     border-#{$posX_flipped}: $size solid transparent;
     border-#{$posY}: $size solid $color;
   } @else {
-    // Default triangle pointing to the right if no position is specified
     border-left: $size solid $color;
     border-top: $size solid transparent;
     border-bottom: $size solid transparent;
+  }
+
+  // Media query adjustments
+  @include mq(xxl) {
+    $size-xxl: $size - $reduceStep;
+    border-#{$posX_flipped}: $size-xxl solid transparent;
+    border-#{$posY}: $size-xxl solid $color;
+  }
+  @include mq(xl) {
+    $size-xl: $size - (2 * $reduceStep); // Subtract $reduceStep twice for xl
+    border-#{$posX_flipped}: $size-xl solid transparent;
+    border-#{$posY}: $size-xl solid $color;
+  }
+  @include mq(lg) {
+    $size-lg: $size - (3 * $reduceStep); // Subtract $reduceStep thrice for lg
+    border-#{$posX_flipped}: $size-lg solid transparent;
+    border-#{$posY}: $size-lg solid $color;
+  }
+  @include mq(md) {
+    $size-lg: $size - (3.5 * $reduceStep); // Subtract $reduceStep thrice for lg
+    border-#{$posX_flipped}: $size-lg solid transparent;
+    border-#{$posY}: $size-lg solid $color;
   }
 }

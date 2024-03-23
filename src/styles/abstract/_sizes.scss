@@ -1,4 +1,5 @@
 $sizes: (
+  6: 0.375rem,
   8: 0.5rem,
   10: 0.6125rem,
   12: 0.75rem,
@@ -12,6 +13,7 @@ $sizes: (
   40: 2.5rem,
   48: 3rem,
   52: 3.25rem,
+  64: 4rem,
   80: 5rem
 );
 
@@ -19,3 +21,11 @@ $hero-width: 50rem;               // 800px
 $content-padding-left: 7.6875rem; // 123px
 $section-title: 7.5rem;           // 120px
 $steps-margin-left: 9.375rem;     // 150px
+
+// Inline page padding
+$px-xs: 20px;
+$px-sm: 40px;
+$px-md: 80px;
+$px-lg: 120px;
+$px-xl: 160px;
+$px-xxl: 200px;

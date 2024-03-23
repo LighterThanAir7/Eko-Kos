@@ -1,12 +1,13 @@
 import SectionTitle from "./SectionTitle.jsx";
 import ONamaCards from "./ONamaCards.jsx";
+import kosnjaTrave from "/src/assets/kosnja-trave.webp"
 
 export default function ONama () {
   return (
     <section id="o-nama">
       <span className="triangle-bottom-left-flipped-x" role="presentation"></span>
       <div className="image-container image-container--corner-top-left-cut">
-        <img src="/src/assets/kosnja-trave.webp" alt=""/>
+        <img src={kosnjaTrave} alt=""/>
       </div>
       <div className="flex-basis-50">
         <SectionTitle title="O nama" type="fancy"/>

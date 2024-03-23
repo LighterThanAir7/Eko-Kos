@@ -6,21 +6,47 @@ body {
   font-size: fs(400);
   color: clr(neutral, normal);
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 h2 {
   font-size: fs(800);
   font-weight: $fw-600;
   text-transform: uppercase;
+  @include mq(lg) {
+    font-size: fs(700);
+  }
+  @include mq(md) {
+    font-size: fs(600);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: clr(neutral, light);
 }
 
 #pocetna,
-#kako-radimo,
 #o-nama,
 #usluge,
 #galerija,
 #cijena {
   min-height: 100vh;
   position: relative;
-  padding-inline: 10vw;
+  padding-inline: $px-xxl;
+  @include mq(xxl) {
+    padding-inline: $px-xl;
+  }
+  @include mq(xl) {
+    padding-inline: $px-lg;
+  }
+  @include mq(lg) {
+    padding-inline: $px-md;
+  }
+  @include mq(md) {
+    padding-inline: $px-sm;
+  }
+  @include mq(sm) {
+    padding-inline: $px-xs;
+  }
 }

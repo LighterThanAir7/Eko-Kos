@@ -9,7 +9,6 @@ import Footer from "./Footer.jsx";
 function App() {
   return (
     <>
-      <img className="hero__img" src="/src/assets/hero.webp" alt=""/>
       <Pocetna/>
       <KakoRadimo/>
       <ONama/>

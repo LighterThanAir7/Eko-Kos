@@ -1,12 +1,19 @@
 @use "../abstract" as *;
 @use "../utilities/button-transition" as u;
 
+.menu {
+  display: none;
+  z-index: 20;
+  @media screen and (max-width: mq(lg)) {
+    display: block;
+  }
+}
+
 .nav {
-  @include d-flex($g: size(16));
+  @include d-flex($jc: flex-end);
+  width: 100%;
   &__link {
-    @include d-flex($jc: center, $ai: center);
     color: currentColor;
-    text-decoration: none;
     padding: size(12) size(32);
     font-size: fs(300);
     text-transform: uppercase;
@@ -14,8 +21,51 @@
     border-radius: 10px;
     white-space: nowrap;
     transition: 300ms ease-in-out;
+    position: relative;
     &:hover {
       @extend %button-transition;
     }
+    @include mq(xxl) {
+      font-size: fs(200);
+    }
+  }
+  @include mq(lg) {
+    & {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      transition: right 500ms ease-in-out;
+      position: absolute;
+      width: 250px;
+      top: 0;
+      right: -240px;
+      background-color: rgb(126, 166, 0);
+      z-index: 10;
+      border-bottom-right-radius: 0px;
+      border-top-left-radius: 40px;
+      border-bottom-left-radius: 40px;
+      padding: 34px 0 size(12) size(20);
+      &.show {
+        right: 0;
+      }
+    }
+    &__link {
+      border: unset;
+      background-color: unset;
+      transition: 300ms ease-in-out;
+      &:not(:last-child):after {
+        content: "";
+        position: absolute;
+        width: 250px;
+        height: 2px;
+        left: 10px;
+        bottom: 0px;
+        background-color: rgba(77, 93, 8, 0.3);
+      }
+      &:hover {
+        color: #283304;
+      }
+    }
   }
 }
+
