@@ -2,8 +2,7 @@
 
 .image-container {
   position: relative;
-
-  &--corner-top-left-cut {
+  &--corner-cut {
     &::before {
       content: '';
       z-index: 2;

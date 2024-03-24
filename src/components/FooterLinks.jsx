@@ -4,20 +4,20 @@ export default function FooterLinks () {
       <div className="footer-section">
         <h4 className="footer-section__title">Brzi linkovi</h4>
         <ul className="footer-section__list">
-          <li className="footer-section__item"><i className="icon-leaf"></i>Naslovna</li>
-          <li className="footer-section__item"><i className="icon-leaf"></i>Kako radimo</li>
-          <li className="footer-section__item"><i className="icon-leaf"></i>O nama</li>
-          <li className="footer-section__item"><i className="icon-leaf"></i>Usluge</li>
-          <li className="footer-section__item"><i className="icon-leaf"></i>Galerija</li>
-          <li className="footer-section__item"><i className="icon-leaf"></i>Cijena</li>
+          <li className="footer-section__item"><i className="icon-leaf"></i><a className="footer-section__link" href="#naslovna">Naslovna</a></li>
+          <li className="footer-section__item"><i className="icon-leaf"></i><a className="footer-section__link" href="#kako-radimo">Kako radimo</a></li>
+          <li className="footer-section__item"><i className="icon-leaf"></i><a className="footer-section__link" href="#o-nama">O nama</a></li>
+          <li className="footer-section__item"><i className="icon-leaf"></i><a className="footer-section__link" href="#usluge">Usluge</a></li>
+          <li className="footer-section__item"><i className="icon-leaf"></i><a className="footer-section__link" href="#galerija">Galerija</a></li>
+          <li className="footer-section__item"><i className="icon-leaf"></i><a className="footer-section__link" href="#cijena">Cijena</a></li>
         </ul>
       </div>
       <div className="footer-section">
         <h4 className="footer-section__title">Kontakt</h4>
         <ul className="footer-section__list">
           <li className="footer-section__item"><i className="icon-map-pin"></i>Zagreb, Hrvatska</li>
-          <li className="footer-section__item"><i className="icon-phone"></i>091/782-5340</li>
-          <li className="footer-section__item"><i className="icon-email"></i>antogalic68@gmail.com</li>
+          <li className="footer-section__item"><i className="icon-phone"></i><a className="footer-section__link" href="tel:091/782-5340">091 782 5340</a></li>
+          <li className="footer-section__item"><i className="icon-email"></i><a className="footer-section__link" href="mailto:antogalic68@gmail.com">antogalic68@gmail.com</a></li>
         </ul>
       </div>
       <div className="footer-section">

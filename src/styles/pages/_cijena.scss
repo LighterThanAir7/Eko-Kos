@@ -1,9 +1,35 @@
 @use "../abstract" as *;
 
 #cijena {
-  padding-block: 10rem;
+  padding-block: 5rem;
 }
 
-#cijena > div {
-  @include d-flex($jc: center, $g: size(80))
+.cijena {
+  @include d-flex($jc: space-around, $g: size(64));
+  @include mq(xl) {
+    flex-direction: column;
+  }
 }
+
+.stari_logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gdje-radimo {
+  margin-left: size(32);
+  li {
+    font-size: fs(500);
+    font-weight: $fw-600;
+    list-style-type: square;
+  }
+  @include mq(lg) {
+    li {
+      font-size: fs(300);
+      font-weight: $fw-500;
+    }
+  }
+}
+

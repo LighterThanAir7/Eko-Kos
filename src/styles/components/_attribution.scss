@@ -78,4 +78,15 @@ body.active-modal {
   a {
     color: clr(primary, normal);
   }
+  @include mq(lg) {
+    &__title {
+      font-size: fs(400);
+    }
+    &__close {
+      padding: size(6);
+    }
+    li {
+      font-size: fs(100);
+    }
+  }
 }

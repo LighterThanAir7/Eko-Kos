@@ -29,13 +29,27 @@
   }
   &__text {
     width: 100%;
-    font-size: 14px;
+    font-size: fs(200);
+    line-height: 1.25;
+  }
+  @include mq(lg) {
+    &__title {
+      font-size: fs(500);
+    }
+    &__icon {
+      width: 70px;
+      height: 70px;
+      font-size: fs(850);
+    }
+  }
+  @include mq(sm) {
+    flex-basis: 100%;
   }
 }
 
 .card-2 {
   background-color: white;
-  @include d-flex($ai: center, $g: 36px);
+  @include d-flex($ai: center, $g: size(36));
   padding: size(32);
   border-radius: 12px;
   max-width: 700px;
@@ -58,7 +72,57 @@
     color: clr(primary, dark-2);
   }
   &__text {
-    line-height: 20px;
+    line-height: 1.25;
+  }
+  @include mq(xxl) {
+    gap: size(32);
+    padding: size(28);
+    &__icon {
+      width: 75px;
+      height: 75px;
+      font-size: fs(800);
+    }
+    &__title {
+      font-size: fs(600);
+      font-weight: $fw-500;
+    }
+    &__text {
+      font-size: fs(300);
+      line-height: 1.15;
+    }
+  }
+  @include mq(md) {
+    border-radius: 8px;
+    gap: size(24);
+    padding: size(20);
+    &__icon {
+      width: 60px;
+      height: 60px;
+      font-size: fs(700);
+    }
+    &__title {
+      font-size: fs(500);
+      margin-bottom: 0;
+    }
+    &__text {
+      font-size: fs(200);
+      line-height: 1;
+    }
+  }
+  @include mq(sm) {
+    gap: size(20);
+    padding: size(16);
+    &__icon {
+      width: 50px;
+      height: 50px;
+      font-size: fs(600);
+    }
+    &__title {
+      font-size: fs(300);
+    }
+    &__text {
+      font-size: fs(50);
+    }
   }
 }
 

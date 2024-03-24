@@ -1,7 +1,7 @@
 @use "../abstract" as *;
 
 .pricing {
-  @include d-flex();
+  @include d-flex($jc: center, $ai: center);
   background-color: rgba(clr(primary, light), 20%);
   border: 2px solid clr(primary, normal);
   border-radius: size(12);
@@ -11,7 +11,9 @@
     font-size: fs(900);
     margin-right: size(16);
   }
-  &__text {
-
+  @include mq(xl) {
+    &__icon {
+      font-size: fs(600);
+    }
   }
 }

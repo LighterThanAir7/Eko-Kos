@@ -3,12 +3,20 @@
 #usluge {
   @include d-flex($d: column, $ai: center, $jc: center);
   color: clr(neutral, light);
-  padding-block: 10rem;
+  min-height: 80vh;
+  position: relative;
+  padding: 10rem $px-md;
+  @include mq(xxl) {
+    padding-block: 8rem;
+  }
 }
 
 .usluge__description {
   max-width: 620px;
-  font-size: 22px;
+  font-size: size(20);
   margin-bottom: size(52);
   text-align: center;
+  @include mq(xxl) {
+    font-size: unset
+  }
 }

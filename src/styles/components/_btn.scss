@@ -16,4 +16,17 @@
     color: clr(neutral, dark);
     cursor: pointer;
   }
+  @include mq(xxl) {
+    font-size: fs(400);
+  }
+  @include mq(xl) {
+    font-size: fs(300);
+  }
+  @include mq(lg) {
+    font-size: fs(200);
+    font-weight: $fw-600;
+  }
+  @include mq(lg) {
+    font-size: fs(100);
+  }
 }

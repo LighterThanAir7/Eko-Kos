@@ -6,10 +6,10 @@ export default function ONama () {
   return (
     <section id="o-nama">
       <span className="triangle-bottom-left-flipped-x" role="presentation"></span>
-      <div className="image-container image-container--corner-top-left-cut">
+      <div className="image-container image-container--corner-cut">
         <img src={kosnjaTrave} alt=""/>
       </div>
-      <div className="flex-basis-50">
+      <div className="o-nama__content">
         <SectionTitle title="O nama" type="fancy"/>
         <p className="margin-bottom-8">
           Naša tvrtka se ponosi dugogodišnjim iskustvom i stručnošću u području  uređenja i održavanja okućnica, vikendica i voćnjaka. Posvećeni smo pružanju vrhunskih usluga našim klijentima, uvijek težeći najvišim standardima kvalitete i pouzdanosti.
@@ -19,7 +19,6 @@ export default function ONama () {
         </p>
         <ONamaCards/>
       </div>
-      <div className="box"></div>
     </section>
   )
 }

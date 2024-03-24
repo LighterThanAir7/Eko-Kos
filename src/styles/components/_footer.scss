@@ -5,12 +5,14 @@ footer {
 }
 
 .footer {
-  @include d-flex($jc: space-around);
+  @include d-flex($jc: space-around, $g: size(48));
+  flex-wrap: wrap;
   background-color: clr(neutral, normal);
   color: clr(neutral, light);
   padding: 80px 20px size(80);
   padding-inline: 5vw;
   font-size: fs(300);
+  z-index: 20;
   & .logo {
     margin-bottom: size(32);
   }
@@ -22,7 +24,6 @@ footer {
     }
   }
   &-section {
-    z-index: 2;
     &__title {
       font-size: fs(500);
       font-weight: $fw-700;
@@ -42,6 +43,12 @@ footer {
         color: clr(primary, normal)
       }
     }
+    &__link {
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
   }
   &__cover {
     position: absolute;
@@ -50,6 +57,10 @@ footer {
     height: 100%;
     object-fit: cover;
     mix-blend-mode: lighten;
+    pointer-events: none;
+  }
+  @include mq(md) {
+    justify-content: flex-start;
   }
 }
 

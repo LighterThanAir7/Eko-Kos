@@ -1,6 +1,27 @@
 @use "../abstract" as *;
 
 #galerija {
-  @include d-flex($jc: center, $ai: center, $g: size(80));
+  @include d-flex($jc: space-evenly, $ai: center, $g: size(48));
   background-color: rgba(193, 171, 114, 0.22);
+  padding-block: 5rem;
+  @include mq(xxl) {
+    & .image-container {
+      img {
+        max-width: 350px;
+      }
+    }
+  }
+  @include mq(xl) {
+    min-height: 50vh;
+    & > div {
+      flex-basis: 100%;
+      text-align: center;
+      & .btn {
+        width: 60%;
+      }
+    }
+    & .image-container {
+      display: none;
+    }
+  }
 }

@@ -1,6 +1,7 @@
 @use "../abstract" as *;
 
 #pocetna {
+  min-height: 100vh;
   color: clr(neutral, light);
   font-weight: $fw-600;
 }

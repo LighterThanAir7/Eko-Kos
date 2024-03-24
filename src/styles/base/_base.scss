@@ -3,7 +3,7 @@
 body {
   font-family: $ff-inter;
   font-weight: $fw-400;
-  font-size: fs(400);
+  font-size: fs(300);
   color: clr(neutral, normal);
   line-height: 1.5;
   overflow-x: hidden;
@@ -13,12 +13,6 @@ h2 {
   font-size: fs(800);
   font-weight: $fw-600;
   text-transform: uppercase;
-  @include mq(lg) {
-    font-size: fs(700);
-  }
-  @include mq(md) {
-    font-size: fs(600);
-  }
 }
 
 a {
@@ -27,11 +21,8 @@ a {
 }
 
 #pocetna,
-#o-nama,
-#usluge,
 #galerija,
 #cijena {
-  min-height: 100vh;
   position: relative;
   padding-inline: $px-xxl;
   @include mq(xxl) {
@@ -48,5 +39,23 @@ a {
   }
   @include mq(sm) {
     padding-inline: $px-xs;
+  }
+}
+
+@include mq(lg) {
+  p {
+    font-size: fs(200);
+    line-height: 1;
+  }
+  h2 {
+    font-size: fs(700);
+  }
+}
+@include mq(md) {
+  p {
+    font-size: fs(100);
+  }
+  h2 {
+    font-size: fs(600);
   }
 }

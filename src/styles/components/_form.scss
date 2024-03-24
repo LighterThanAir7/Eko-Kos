@@ -2,14 +2,14 @@
 
 .form {
   &__row {
-    @include d-flex($jc: space-between, $g: size(32));
+    @include d-flex($jc: space-between, $g: size(20));
   }
   &__input {
-    padding: size(20) size(24);
+    padding: size(12) size(20);
     border: 2px solid clr(neutral, normal-2);
     border-radius: 10px;
     width: 100%;
-    margin-bottom: size(32);
+    margin-bottom: size(20);
     transition: 300ms ease-in-out;
     outline: 2px solid transparent;
     &:hover,
@@ -18,11 +18,15 @@
       border: 2px solid clr(primary, normal);
       background-color: rgba(clr(primary, normal), 10%);
     }
-    &:focus {
-      outline: 2px solid clr(primary, normal);
-    }
     &--has-text {
+      border: 2px solid clr(primary, normal);
       background-color: rgba(clr(primary, normal), 10%);
+    }
+  }
+  @include mq(lg) {
+    &__input {
+      padding: size(8) size(16);
+      font-size: fs(100);
     }
   }
 }

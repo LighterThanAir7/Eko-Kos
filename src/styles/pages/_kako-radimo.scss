@@ -6,6 +6,7 @@
   position: relative;
   padding: $px-md $px-sm;
   @include mq(md) {
+    min-height: 80vh;
     padding-inline: $px-xs;
   }
 }

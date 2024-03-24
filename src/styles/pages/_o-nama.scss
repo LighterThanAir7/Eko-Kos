@@ -2,11 +2,15 @@
 
 .triangle-bottom-left-flipped-x {
   @include triangle(400px, clr(primary, dark), "left", "top");
+  z-index: 10;
 }
 
 #o-nama {
-  @include d-flex($jc: center, $ai: flex-end, $g: size(80));
+  @include d-flex($jc: space-around, $ai: flex-end, $g: size(32));
   padding-block: 10rem;
+  padding-inline: $px-sm;
+  min-height: 100vh;
+  position: relative;
 
   img {
     max-height: 736px;
@@ -17,8 +21,34 @@
       @include triangle(400xp, white, top, left);
     }
   }
+
+  @include mq(xxl) {
+    flex-direction: column;
+    align-items: center;
+    gap: size(64);
+    padding-inline: $px-xs;
+    & .image-container {
+      &::before {
+        display: none;
+      }
+      order: 2;
+    }
+    p {
+      font-size: fs(300);
+      text-align: center;
+    }
+  }
+  @include mq(sm) {
+    p {
+      font-size: fs(200);
+    }
+  }
 }
 
 #o-nama >  {
   flex-basis: 50%;
+}
+
+.o-nama__content {
+  max-width: 900px;
 }
