@@ -983,14 +983,13 @@ body.active-modal {
   place-items: center;
   position: relative;
 }
-.image-slider__container {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
 .image-slider__img {
   object-fit: cover;
   height: 100%;
+  margin: 0 auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+  transition: translate 300ms ease-in-out;
 }
 .image-slider__btn {
   all: unset;
@@ -1015,6 +1014,20 @@ body.active-modal {
 }
 .image-slider__btn:hover {
   background-color: rgba(0, 0, 0, 0.3);
+}
+.image-slider__dots {
+  position: absolute;
+  bottom: -60px;
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.25rem;
+}
+.image-slider__dot-btn {
+  all: unset;
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
 }
 
 #pocetna {

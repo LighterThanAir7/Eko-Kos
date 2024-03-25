@@ -13,8 +13,6 @@ export default function ImageSlider () {
     document.body.classList.remove('active-modal')
   }
 
-
-
   const [images, setImages] = useState([]);
 
   useEffect(() => {
