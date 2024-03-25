@@ -801,6 +801,17 @@ a {
   }
 }
 
+.message {
+  text-align: center;
+  font-size: 1.25rem;
+}
+.message--success {
+  color: #006838;
+}
+.message--error {
+  color: red;
+}
+
 footer {
   position: relative;
 }

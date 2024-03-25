@@ -30,3 +30,14 @@
     }
   }
 }
+
+.message {
+  text-align: center;
+  font-size: fs(500);
+  &--success {
+    color: clr(primary, normal-2);
+  }
+  &--error {
+    color: red;
+  }
+}

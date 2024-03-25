@@ -2,25 +2,39 @@ import React, {useRef, useState} from 'react';
 import * as emailjs from "@emailjs/browser";
 
 export default function Form() {
-  const form = useRef();
   const [formState, setFormState] = useState({
     name: '',
     surname: '',
     email: '',
     subject: '',
-    message: ''
+    message: '',
   });
+
+  const [submissionStatus, setSubmissionStatus] = useState({
+    message: '',
+    type: ''
+  });
+
+  const form = useRef(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormState(prevState => ({
       ...prevState,
-      [name]: value
+      [name]: value,
     }));
+
+    if (submissionStatus.message) {
+      setSubmissionStatus({ message: '', type: '' });
+    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const serviceID = 'service_xwq2vop';
+    const templateID = 'template_1gd6z49';
+    const publicKey = '4ZPb-e3fZGWkJS1pw';
 
     const templateParams = {
       from_name: `${formState.name} ${formState.surname}`,
@@ -29,17 +43,25 @@ export default function Form() {
       message: formState.message,
     };
 
-    emailjs.send('service_xwq2vop', 'template_1gd6z49', templateParams, '4ZPb-e3fZGWkJS1pw')
+    emailjs.send(serviceID, templateID, templateParams, publicKey)
       .then(
         (result) => {
           console.log('SUCCESS!', result.text);
+          setSubmissionStatus({ message: 'Vaša poruka je uspješno poslana !', type: 'success' });
+          setFormState({
+            name: '',
+            surname: '',
+            email: '',
+            subject: '',
+            message: '',
+          });
         },
         (error) => {
           console.log('FAILED...', error.text);
+          setSubmissionStatus({ message: 'Došlo je do pogreške prilikom slanja poruke !', type: 'error' });
         },
       );
   };
-
 
   return (
     <form ref={form} className="form flex-basis-50" onSubmit={handleSubmit}>
@@ -91,7 +113,12 @@ export default function Form() {
         rows="10"
         required
       />
-      <button className="btn" type="submit">Pošalji</button>
+      <button className="btn margin-bottom-16" type="submit">Pošalji</button>
+      {submissionStatus.message && (
+        <p className={submissionStatus.type === 'success' ? 'message message--success' : 'message message--error'}>
+          {submissionStatus.message}
+        </p>
+      )}
     </form>
   );
 }
