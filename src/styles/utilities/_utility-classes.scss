@@ -24,3 +24,11 @@
 .text-bold {
   font-weight: $fw-700;
 }
+
+.flip-x {
+  transform: rotateY(180deg);
+}
+
+.padding-image-gallery {
+  padding: 10rem;
+}
