@@ -30,17 +30,14 @@
     }
   }
 
-  &--fancy {
-    &::before {
-      left: -150px;
-      bottom: -30px;
-      width: 125px;
-    }
-    &::after {
-      left: 150px;
-      bottom: -30px;
-      width: 125px;
-    }
+  &__decoration {
+    @include d-flex($ai: center, $g: size(32));
+  }
+
+  &__line {
+    height: 2px;
+    width: 100px;
+    background-color: #7DA500;
   }
 }
 

@@ -60,6 +60,7 @@ export default function AttributionModal () {
               <li>arrow-left - by <a href="https://github.com/formkit/formkit/tree/master/packages/icons">FormKit</a></li>
               <li>leaf - by <a href="https://github.com/Templarian/MaterialDesign">Pictogrammers</a></li>
               <li>medal - by <a href="https://github.com/icons8/line-awesome">Icons8</a></li>
+              <li>save planet - by <a href="https://thenounproject.com/icon/save-planet-2982644/">LINECTOR</a></li>
             </ul>
 
             <h3 className="modal__subtitle">Licenses</h3>

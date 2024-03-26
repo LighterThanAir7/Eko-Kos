@@ -32,6 +32,7 @@ body.active-modal {
   z-index: 40;
   background-color: clr(neutral, normal);
   overflow-y: scroll;
+  overflow-x: hidden;
   &__content {
     position: absolute;
     padding: size(24) size(32);

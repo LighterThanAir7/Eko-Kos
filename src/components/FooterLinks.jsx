@@ -4,7 +4,7 @@ export default function FooterLinks () {
       <div className="footer-section">
         <h4 className="footer-section__title">Brzi linkovi</h4>
         <ul className="footer-section__list">
-          <li className="footer-section__item"><i className="icon-leaf"></i><a className="footer-section__link" href="#naslovna">Naslovna</a></li>
+          <li className="footer-section__item"><i className="icon-leaf"></i><a className="footer-section__link" href="#pocetna">Naslovna</a></li>
           <li className="footer-section__item"><i className="icon-leaf"></i><a className="footer-section__link" href="#kako-radimo">Kako radimo</a></li>
           <li className="footer-section__item"><i className="icon-leaf"></i><a className="footer-section__link" href="#o-nama">O nama</a></li>
           <li className="footer-section__item"><i className="icon-leaf"></i><a className="footer-section__link" href="#usluge">Usluge</a></li>

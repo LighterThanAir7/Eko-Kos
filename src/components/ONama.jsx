@@ -1,6 +1,7 @@
 import SectionTitle from "./SectionTitle.jsx";
 import ONamaCards from "./ONamaCards.jsx";
-import kosnjaTrave from "/src/assets/kosnja-trave.webp"
+import kosnjaTrave from "/src/assets/photo-gallery/image-1.webp"
+import CardData from "../data/oNamaCardData.json";
 
 export default function ONama () {
   return (
@@ -17,7 +18,7 @@ export default function ONama () {
         <p className="margin-bottom-32">
           Uz nas kao partnera možete biti sigurni da ćete dobiti pouzdane usluge visoke kvalitete po pristupačnim cijenama. Kontaktirajte nas danas i dopustite nam da vam pomognemo u stvaranju zelenijeg i održivijeg okoliša koji ćete s ponosom nazvati  svojim."
         </p>
-        <ONamaCards/>
+        <ONamaCards data={CardData}/>
       </div>
     </section>
   )

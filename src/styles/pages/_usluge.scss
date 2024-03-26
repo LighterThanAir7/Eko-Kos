@@ -5,9 +5,9 @@
   color: clr(neutral, light);
   min-height: 80vh;
   position: relative;
-  padding: 10rem $px-md;
+  padding: 8rem $px-md;
   @include mq(xxl) {
-    padding-block: 8rem;
+    padding-block: 6rem;
   }
 }
 

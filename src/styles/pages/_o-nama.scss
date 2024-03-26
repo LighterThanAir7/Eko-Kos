@@ -5,14 +5,15 @@
   z-index: 10;
 }
 
-#o-nama {
+#o-nama,
+#eko {
   @include d-flex($jc: space-around, $ai: flex-end, $g: size(32));
   padding-block: 10rem;
   padding-inline: $px-sm;
   min-height: 100vh;
   position: relative;
 
-  img {
+  & .image-container img {
     max-height: 736px;
     position: relative;
     &::after {

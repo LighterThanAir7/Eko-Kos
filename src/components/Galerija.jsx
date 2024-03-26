@@ -1,5 +1,5 @@
 import SectionTitle from "./SectionTitle.jsx";
-import galerijaCover from "/src/assets/galerija-cover.webp"
+import galerijaCover from "/src/assets/photo-gallery/image-4.webp"
 import {useEffect, useState} from "react";
 import ImageSlider from "./ImageSlider.jsx";
 
