@@ -29,7 +29,7 @@ body.active-modal {
   right: 0;
   bottom: 0;
   position: fixed;
-  z-index: 10;
+  z-index: 40;
   background-color: clr(neutral, normal);
   overflow-y: scroll;
   &__content {
@@ -37,7 +37,7 @@ body.active-modal {
     padding: size(24) size(32);
     width: 100%;
     margin: 0 auto;
-    z-index: 20;
+    z-index: 50;
   }
   &__heading {
     @include d-flex($jc: space-between, $ai: center)
@@ -67,9 +67,20 @@ body.active-modal {
     left: 0;
   }
   &__close {
-    height: fit-content;
-    padding: size(12);
+    all: unset;
+    padding: .75rem;
     cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: fs(900);
+    transition: background-color 300ms ease-in-out;
+    border-radius: 12px;
+    line-height: 1;
+    &:hover {
+      background-color: #3c3c3c;
+    }
   }
   &__list {
     margin-left: size(20);
@@ -79,6 +90,9 @@ body.active-modal {
     color: clr(primary, normal);
   }
   @include mq(lg) {
+    &__close {
+      font-size: fs(700);
+    }
     &__title {
       font-size: fs(400);
     }

@@ -914,7 +914,7 @@ body.active-modal {
   right: 0;
   bottom: 0;
   position: fixed;
-  z-index: 10;
+  z-index: 40;
   background-color: #232323;
   overflow-y: scroll;
 }
@@ -923,7 +923,7 @@ body.active-modal {
   padding: 1.5rem 2rem;
   width: 100%;
   margin: 0 auto;
-  z-index: 20;
+  z-index: 50;
 }
 .modal__heading {
   display: flex;
@@ -954,9 +954,20 @@ body.active-modal {
   left: 0;
 }
 .modal__close {
-  height: fit-content;
+  all: unset;
   padding: 0.75rem;
   cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 3.375rem;
+  transition: background-color 300ms ease-in-out;
+  border-radius: 12px;
+  line-height: 1;
+}
+.modal__close:hover {
+  background-color: #3c3c3c;
 }
 .modal__list {
   margin-left: 1.25rem;
@@ -966,6 +977,9 @@ body.active-modal {
   color: #7DA500;
 }
 @media screen and (max-width: 57.5em) {
+  .modal__close {
+    font-size: 1.75rem;
+  }
   .modal__title {
     font-size: 1.125rem;
   }
@@ -982,9 +996,10 @@ body.active-modal {
   display: grid;
   place-items: center;
   position: relative;
+  margin-inline: 10rem;
 }
 .image-slider__img {
-  object-fit: cover;
+  object-fit: contain;
   height: 100%;
   margin: 0 auto;
   flex-grow: 0;
@@ -1015,19 +1030,16 @@ body.active-modal {
 .image-slider__btn:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
-.image-slider__dots {
-  position: absolute;
-  bottom: -60px;
-  padding: 0.5rem;
-  display: flex;
-  gap: 0.25rem;
+@media screen and (max-width: 57.5em) {
+  .image-slider__btn {
+    font-size: 2rem;
+    padding-inline: 1.25rem;
+  }
 }
-.image-slider__dot-btn {
-  all: unset;
-  display: block;
-  width: 2rem;
-  height: 2rem;
-  cursor: pointer;
+@media screen and (max-width: 75em) {
+  .image-slider {
+    margin-inline: 0;
+  }
 }
 
 #pocetna {
@@ -2321,10 +2333,6 @@ body.active-modal {
 
 .flip-x {
   transform: rotateY(180deg);
-}
-
-.padding-image-gallery {
-  padding: 10rem;
 }
 
 /*# sourceMappingURL=App.css.map */

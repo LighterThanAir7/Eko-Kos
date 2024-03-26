@@ -53,6 +53,7 @@ export default function ImageSlider () {
             <button onClick={showPreviousImage} className="image-slider__btn image-slider__btn--left"><i className="icon-arrow_left"></i></button>
             <button onClick={showNextImage} className="image-slider__btn image-slider__btn--right"><i className="icon-arrow_left flip-x"></i></button>
           </div>
+          <button onClick={toggleModal} className="modal__close">&#x2715;</button>
         </div>
       )}
     </>

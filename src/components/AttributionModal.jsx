@@ -26,7 +26,7 @@ export default function AttributionModal () {
             <header className="modal__heading">
               <h2 className="modal__title">Attribution & Licenses</h2>
               <button className="modal__close" onClick={toggleModal}>
-                &#x1F5D9;
+                &#x2715;
               </button>
             </header>
 
