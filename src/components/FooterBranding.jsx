@@ -6,8 +6,7 @@ export default function FooterBranding () {
     <div className="footer__branding">
       <Logo/>
       <p className="footer__branding-text">
-        Adipisicing elit sed do eiusmod tempor incidunt labore et dolore magna aliqua enim minim ven quis nostu
-        exercitation ullamco.
+        Pozovite nas i zajedno ćemo oživjeti vaš prostor za svakodnevno uživanje u zelenilu koje vas okružuje.
       </p>
       <AttributionModal/>
     </div>

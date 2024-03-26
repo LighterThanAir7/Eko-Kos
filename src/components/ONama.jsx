@@ -13,10 +13,12 @@ export default function ONama () {
       <div className="o-nama__content">
         <SectionTitle title="O nama" type="fancy"/>
         <p className="margin-bottom-8">
-          Naša tvrtka se ponosi dugogodišnjim iskustvom i stručnošću u području  uređenja i održavanja okućnica, vikendica i voćnjaka. Posvećeni smo pružanju vrhunskih usluga našim klijentima, uvijek težeći najvišim standardima kvalitete i pouzdanosti.
+          Naša tvrtka se ponosi <span className="text-bold">dugogodišnjim iskustvom</span> i stručnošću u području  uređenja i održavanja okućnica, vikendica i voćnjaka. Posvećeni smo pružanju <span className="text-bold">vrhunskih
+          usluga</span> našim klijentima, uvijek težeći najvišim standardima kvalitete i pouzdanosti.
         </p>
         <p className="margin-bottom-32">
-          Uz nas kao partnera možete biti sigurni da ćete dobiti pouzdane usluge visoke kvalitete po pristupačnim cijenama. Kontaktirajte nas danas i dopustite nam da vam pomognemo u stvaranju zelenijeg i održivijeg okoliša koji ćete s ponosom nazvati  svojim."
+          Uz nas kao <span className="text-bold">partnera</span> možete biti sigurni da ćete dobiti pouzdane usluge visoke kvalitete po <span className="text-bold">pristupačnim
+          cijenama</span>. Kontaktirajte nas danas i dopustite nam da vam pomognemo u stvaranju zelenijeg i održivijeg okoliša koji ćete s ponosom nazvati  svojim."
         </p>
         <ONamaCards data={CardData}/>
       </div>

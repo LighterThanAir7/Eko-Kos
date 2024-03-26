@@ -26,7 +26,6 @@
   @include mq(lg) {
     &__input {
       padding: size(8) size(16);
-      font-size: fs(100);
     }
   }
 }

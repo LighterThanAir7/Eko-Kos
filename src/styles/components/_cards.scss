@@ -87,7 +87,7 @@
       font-weight: $fw-500;
     }
     &__text {
-      font-size: fs(300);
+      font-size: fs(400);
       line-height: 1.15;
     }
   }
@@ -106,22 +106,20 @@
     }
     &__text {
       font-size: fs(200);
-      line-height: 1;
     }
   }
   @include mq(sm) {
     gap: size(20);
-    padding: size(16);
+    padding: 0;
+    border-radius: 0;
     &__icon {
-      width: 50px;
-      height: 50px;
-      font-size: fs(600);
+      width: 60px;
+      height: 100%;
+      border-radius: 0;
     }
-    &__title {
-      font-size: fs(300);
-    }
-    &__text {
-      font-size: fs(50);
+    &__content {
+      padding-block: size(16);
+      padding-right: size(8);
     }
   }
 }

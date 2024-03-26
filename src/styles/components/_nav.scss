@@ -15,7 +15,7 @@
   &__link {
     color: currentColor;
     padding: size(12) size(32);
-    font-size: fs(300);
+    font-size: fs(400);
     text-transform: uppercase;
     border: 2px solid transparent;
     border-radius: 10px;
@@ -26,7 +26,7 @@
       @extend %button-transition;
     }
     @include mq(xxl) {
-      font-size: fs(200);
+      font-size: fs(300);
     }
   }
   @include mq(lg) {
@@ -36,15 +36,15 @@
       align-items: flex-start;
       transition: right 500ms ease-in-out;
       position: absolute;
-      width: 250px;
-      top: 0;
+      width: 170px;
+      top: 115px;
       right: -240px;
       background-color: rgb(126, 166, 0);
       z-index: 10;
-      border-bottom-right-radius: 0px;
-      border-top-left-radius: 40px;
-      border-bottom-left-radius: 40px;
-      padding: 34px 0 size(12) size(20);
+      border-bottom-right-radius: 0;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      padding: size(16) 0 size(12) size(32);
       &.show {
         right: 0;
       }
@@ -53,14 +53,11 @@
       border: unset;
       background-color: unset;
       transition: 300ms ease-in-out;
-      &:not(:last-child):after {
-        content: "";
-        position: absolute;
-        width: 250px;
-        height: 2px;
-        left: 10px;
-        bottom: 0px;
-        background-color: rgba(77, 93, 8, 0.3);
+      width: 100%;
+      border-radius: 0;
+      padding-left: size(4);
+      &:not(:last-child) {
+        border-bottom: 2px solid rgba(255, 255, 255, 0.4);
       }
       &:hover {
         color: #283304;
@@ -69,3 +66,30 @@
   }
 }
 
+.menu-icon {
+  cursor: pointer;
+  width: fit-content;
+  padding-right: size(4);
+  z-index: 50;
+}
+
+.line {
+  height: 4px;
+  width: 30px;
+  background-color: clr(neutral, light);
+  margin: 6px 0;
+  transition: all 0.3s ease;
+}
+
+/* Transformed state to X */
+.menu-icon.transformed .line:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.menu-icon.transformed .line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.transformed .line:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}

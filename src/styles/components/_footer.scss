@@ -18,7 +18,7 @@ footer {
   }
   &__branding {
     &-text {
-      font-size: fs(200);
+      font-size: fs(300);
       max-width: 400px;
       margin-bottom: size(32);
     }
@@ -61,6 +61,16 @@ footer {
   }
   @include mq(md) {
     justify-content: flex-start;
+  }
+  @include mq(sm) {
+    &-section {
+      width: 100%;
+      &__title {
+        margin-bottom: size(20);
+        padding-bottom: size(8);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+      }
+    }
   }
 }
 

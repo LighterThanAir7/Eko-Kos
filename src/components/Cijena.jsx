@@ -10,7 +10,7 @@ export default function Cijena () {
       <div className="cijena">
         <div className="flex-basis-50">
           <Pricing/>
-          <p className="margin-bottom-16">
+          <p className="margin-bottom-20">
             Prilagodljivost i transparentnost su od najveće važnosti u našem procesu suranje. Također možete ispunite obrazac s vašim pitanjem, a mi ćemo vam se javiti u najkraćem mogućem roku.
           </p>
           <h2>Gdje radimo</h2>

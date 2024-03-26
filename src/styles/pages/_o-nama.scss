@@ -8,8 +8,7 @@
 #o-nama,
 #eko {
   @include d-flex($jc: space-around, $ai: flex-end, $g: size(32));
-  padding-block: 10rem;
-  padding-inline: $px-sm;
+  padding: 10rem $px-sm;
   min-height: 100vh;
   position: relative;
 
@@ -27,7 +26,7 @@
     flex-direction: column;
     align-items: center;
     gap: size(64);
-    padding-inline: $px-xs;
+    padding: 8rem $px-xs;
     & .image-container {
       &::before {
         display: none;
@@ -36,13 +35,11 @@
     }
     p {
       font-size: fs(300);
-      text-align: center;
+      line-height: 1.25;
     }
   }
-  @include mq(sm) {
-    p {
-      font-size: fs(200);
-    }
+  @include mq(md) {
+    padding-block: 4rem;
   }
 }
 

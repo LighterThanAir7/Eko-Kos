@@ -1,5 +1,9 @@
 @use "../abstract" as *;
 
+body, html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: $ff-inter;
   font-weight: $fw-400;
@@ -9,7 +13,6 @@ body {
   font-size: fs(300);
   color: clr(neutral, normal);
   line-height: 1.5;
-  overflow-x: hidden;
 }
 
 h2 {
@@ -46,19 +49,7 @@ a {
 }
 
 @include mq(lg) {
-  p {
-    font-size: fs(200);
-    line-height: 1;
-  }
   h2 {
-    font-size: fs(700);
-  }
-}
-@include mq(md) {
-  p {
-    font-size: fs(100);
-  }
-  h2 {
-    font-size: fs(600);
+    font-size: fs(750);
   }
 }

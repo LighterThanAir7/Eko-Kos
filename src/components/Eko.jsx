@@ -9,10 +9,10 @@ export default function Eko () {
       <div className="o-nama__content">
         <SectionTitle title="Ekološki način rada" type="fancy"/>
         <p className="margin-bottom-8">
-          Zaštita prirode počinje s vašeg dvorišta. Izaberite put koji vodi ka održivoj budućnosti sa našim ekološkim pristupom uređenju okućnica.
+          <span className="text-bold">Briga o prirodi</span> započinje u našim vrtovima. Odaberite svjetliju budućnost uz naše zelene metode za preuređenje dvorišta koje su jednostavne za planetu, ali velike za vaš dom.
         </p>
         <p className="margin-bottom-32">
-          Naš cilj je minimiziranje ekološkog otiska i poticanje biodiverziteta kroz inovativne i ekološki svjesne usluge za vaš domaći pejzaž.
+          Naša je misija da vaš vrt cvjeta <span className="text-bold">prirodnom ljepotom</span>, a svaki naš korak u uređenju je korak prema zdravijoj i vedrijoj budućnosti za nas i planet <span className="text-bold">Zemlju</span> koju dijelimo.
         </p>
         <ONamaCards data={CardData}/>
       </div>

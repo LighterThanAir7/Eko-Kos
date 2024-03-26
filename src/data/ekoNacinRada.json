@@ -2,21 +2,21 @@
   {
     "title": "Zelena harmonija",
     "description": "Primjenjujemo metode koje štede vodu i energiju, osiguravajući da vaš vrt cvjeta u simfoniji s prirodom.",
-    "icon": "gear"
+    "icon": "leaf-2"
   },
   {
     "title": "Tihi način",
     "description": "Koristimo tihe, akumulatorske kosilice koje održavaju vaš vrt urednim, a vaš mir neometanim.",
-    "icon": "medal"
+    "icon": "ear-sound"
   },
   {
     "title": "Očuvanje Planeta",
     "description": "Naše prakse su dizajnirane da podrže planetu, smanjujući emisiju ugljika kroz upotrebu ekoloških alata i tehnika.",
-    "icon": "paintbrush"
+    "icon": "save-planet"
   },
   {
     "title": "Energetski učinkovito",
     "description": "Naše usluge su dizajnirane da koriste maksimum dnevnog svjetla, smanjujući potrebu za umjetnim osvjetljenjem i energijom.",
-    "icon": "workspace-trusted"
+    "icon": "energy"
   }
 ]

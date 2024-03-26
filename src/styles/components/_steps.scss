@@ -40,7 +40,8 @@
       margin-bottom: size(6);
     }
     &__desc {
-      font-size: fs(200);
+      font-size: fs(300);
+      line-height: 1;
     }
     i {
       font-size: 70px;
@@ -54,27 +55,19 @@
   @include mq(md) {
     gap: 1rem;
     &__number {
-      font-size: fs(1000) - 3rem;
+      font-size: 5.75rem;
       -webkit-text-stroke: 2px clr(primary, normal);
     }
     &__title {
-      font-size: fs(500);
+      font-size: fs(600);
     }
     &__desc {
-      font-size: fs(100);
       line-height: 1;
     }
   }
   @include mq(sm) {
-    gap: 1rem;
     &__number {
-      font-size: fs(1000) - 4rem;
-    }
-    &__title {
-      font-size: fs(300);
-    }
-    &__desc {
-      font-size: fs(100);
+      font-size: 5rem;
     }
   }
 }

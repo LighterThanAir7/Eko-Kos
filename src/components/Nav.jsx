@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import { useState } from "react";
 
 export default function Nav () {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
@@ -15,7 +15,11 @@ export default function Nav () {
         <a className="nav__link" href="#galerija">Galerija</a>
         <a className="nav__link" href="#cijena">Cijena</a>
       </nav>
-      <i onClick={handleMenu} className="menu icon-gear"></i>
+      <div onClick={handleMenu} className={`menu-icon${isMenuVisible ? ' transformed' : ''}`}>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </div>
     </>
-  )
+  );
 }

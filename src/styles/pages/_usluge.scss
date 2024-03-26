@@ -9,12 +9,19 @@
   @include mq(xxl) {
     padding-block: 6rem;
   }
+  @include mq(sm) {
+    padding-inline: 0;
+    & .cards {
+      gap: 0;
+    }
+  }
 }
 
 .usluge__description {
   max-width: 620px;
   font-size: size(20);
   margin-bottom: size(52);
+  padding-inline: size(16);
   text-align: center;
   @include mq(xxl) {
     font-size: unset
