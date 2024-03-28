@@ -7,9 +7,14 @@ export default function Nav () {
     setIsMenuVisible(!isMenuVisible);
   }
 
+  function handleNavClick(e) {
+    if (e.target.classList.contains('nav__link'))
+      setIsMenuVisible(false);
+  }
+
   return (
     <>
-      <nav className={`nav${isMenuVisible ? ' show' : ''}`}>
+      <nav onClick={handleNavClick} className={`nav${isMenuVisible ? ' show' : ''}`}>
         <a className="nav__link" href="#o-nama">O nama</a>
         <a className="nav__link" href="#usluge">Usluge</a>
         <a className="nav__link" href="#galerija">Galerija</a>
