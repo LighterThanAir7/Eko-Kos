@@ -35,8 +35,10 @@ Follow these steps to set up this project on your local machine:
 4. Run `npm run dev`
 5. Click on the provided **link** in the terminal or type [localhost:5173](localhost:5173) into your web browser
 
-### Alternative
+### Alternatives
 Download the repository as .zip, extract it and proceed from _Step 3_.
+
+Check out the finished website on [Netlify](https://eko-kos.netlify.app/).
 
 ## Future plans
 The only thing left to do now is to find a hosting provider that will actually make this site go **live**. (Work in progess!)
