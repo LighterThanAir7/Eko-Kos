@@ -161,6 +161,7 @@ body {
   font-size: 1rem;
   color: #232323;
   line-height: 1.5;
+  overflow: hidden;
 }
 
 h2 {
