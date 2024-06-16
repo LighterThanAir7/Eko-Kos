@@ -225,7 +225,11 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+}
+.header--dark {
+  background-color: #111212;
 }
 
 .logo {
@@ -275,6 +279,10 @@ a {
   .nav__link {
     font-size: 1rem;
   }
+}
+.nav--dark {
+  gap: 0.75rem;
+  color: #fff;
 }
 @media screen and (max-width: 57.5em) {
   .nav {
@@ -352,7 +360,7 @@ a {
   position: absolute;
   top: 37%;
   left: 16%;
-  text-shadow: 3px 5px 2px #474747;
+  text-shadow: 3px 5px 2px rgba(0, 0, 0, 0.1);
 }
 .hero__img {
   position: absolute;
@@ -373,15 +381,17 @@ a {
 .hero__description {
   margin-bottom: 3.25rem;
   font-size: 1.25rem;
-  line-height: 24px;
+  font-weight: 400;
+  line-height: 26px;
 }
 .hero__link {
   display: inline-block;
-  padding: 1.25rem 3rem;
-  font-size: 1rem;
+  padding: 1rem 3rem;
+  font-size: 1.25rem;
+  font-weight: 400;
   text-transform: uppercase;
   color: inherit;
-  border: 4px solid #7DA500;
+  border: 2px solid #7DA500;
   border-radius: 10px;
   transition: 300ms ease-in-out;
 }
@@ -1201,7 +1211,7 @@ body.active-modal {
   }
 }
 
-#o-nama,
+.o-nama,
 #eko {
   display: flex;
   justify-content: space-around;
@@ -1211,12 +1221,12 @@ body.active-modal {
   min-height: 100vh;
   position: relative;
 }
-#o-nama .image-container img,
+.o-nama .image-container img,
 #eko .image-container img {
   max-height: 736px;
   position: relative;
 }
-#o-nama .image-container img::after,
+.o-nama .image-container img::after,
 #eko .image-container img::after {
   content: "";
   position: absolute;
@@ -1225,60 +1235,67 @@ body.active-modal {
   border-left: 400xp solid white;
 }
 @media screen and (max-width: 87.5em) {
-  #o-nama .image-container img::after,
+  .o-nama .image-container img::after,
   #eko .image-container img::after {
     border-: 300xp solid transparent;
     border-left: 300xp solid white;
   }
 }
 @media screen and (max-width: 75em) {
-  #o-nama .image-container img::after,
+  .o-nama .image-container img::after,
   #eko .image-container img::after {
     border-: 200xp solid transparent;
     border-left: 200xp solid white;
   }
 }
 @media screen and (max-width: 57.5em) {
-  #o-nama .image-container img::after,
+  .o-nama .image-container img::after,
   #eko .image-container img::after {
     border-: 100xp solid transparent;
     border-left: 100xp solid white;
   }
 }
 @media screen and (max-width: 48em) {
-  #o-nama .image-container img::after,
+  .o-nama .image-container img::after,
   #eko .image-container img::after {
     border-: 50xp solid transparent;
     border-left: 50xp solid white;
   }
 }
 @media screen and (max-width: 87.5em) {
-  #o-nama,
+  .o-nama,
   #eko {
     flex-direction: column;
     align-items: center;
     gap: 4rem;
     padding: 8rem 20px;
   }
-  #o-nama .image-container,
+  .o-nama .image-container,
   #eko .image-container {
     order: 2;
   }
-  #o-nama .image-container::before,
+  .o-nama .image-container::before,
   #eko .image-container::before {
     display: none;
   }
-  #o-nama p,
+  .o-nama p,
   #eko p {
     font-size: 1rem;
     line-height: 1.25;
   }
 }
 @media screen and (max-width: 48em) {
-  #o-nama,
+  .o-nama,
   #eko {
     padding-block: 4rem;
   }
+}
+
+.o-nama--center {
+  margin-top: 4rem;
+  padding-top: 0;
+  flex-direction: column;
+  align-items: center;
 }
 
 .o-nama__content {
@@ -2378,6 +2395,14 @@ body.active-modal {
 .color-white h2::before, .color-white h2::after {
   color: inherit !important;
   background-color: white;
+}
+
+.mt-80 {
+  margin-top: 5rem;
+}
+
+.flex-column {
+  flex-direction: column;
 }
 
 .text-bold {

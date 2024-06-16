@@ -5,7 +5,7 @@ import CardData from "../data/oNamaCardData.json";
 
 export default function ONama () {
   return (
-    <section id="o-nama">
+    <section className="o-nama">
       <span className="triangle-bottom-left-flipped-x" role="presentation"></span>
       <div className="image-container image-container--corner-cut">
         <img src={kosnjaTrave} alt=""/>

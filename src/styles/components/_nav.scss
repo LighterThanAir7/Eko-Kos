@@ -29,6 +29,10 @@
       font-size: fs(300);
     }
   }
+  &--dark {
+    gap: size(12);
+    color: clr(neutral, light);
+  }
   @include mq(lg) {
     & {
       display: flex;

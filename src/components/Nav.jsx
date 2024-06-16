@@ -1,9 +1,10 @@
-import { useState } from "react";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
-export default function Nav () {
+export default function Nav({dark}) {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
 
-  function handleMenu () {
+  function handleMenu() {
     setIsMenuVisible(!isMenuVisible);
   }
 
@@ -14,11 +15,11 @@ export default function Nav () {
 
   return (
     <>
-      <nav onClick={handleNavClick} className={`nav${isMenuVisible ? ' show' : ''}`}>
-        <a className="nav__link" href="#o-nama">O nama</a>
-        <a className="nav__link" href="#usluge">Usluge</a>
-        <a className="nav__link" href="#galerija">Galerija</a>
-        <a className="nav__link" href="#cijena">Cijena</a>
+      <nav onClick={handleNavClick} className={`nav${dark ? ' nav--dark' : ''}${isMenuVisible ? ' show' : ''}`}>
+        <NavLink className="nav__link" to="/o-nama">O nama</NavLink>
+        <NavLink className="nav__link" to="/usluge">Usluge</NavLink>
+        <NavLink className="nav__link" to="/galerija">Galerija</NavLink>
+        <NavLink className="nav__link" to="/cijena">Cijena</NavLink>
       </nav>
       <div onClick={handleMenu} className={`menu-icon${isMenuVisible ? ' transformed' : ''}`}>
         <div className="line"></div>

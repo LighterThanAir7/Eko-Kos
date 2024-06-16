@@ -7,7 +7,7 @@
   position: absolute;
   top: 37%;
   left: 16%;
-  text-shadow: 3px 5px 2px #474747;
+  text-shadow: 3px 5px 2px rgba(black, 0.1);
   &__img {
     position: absolute;
     left: 0;
@@ -27,15 +27,17 @@
   &__description {
     margin-bottom: size(52);
     font-size: fs(500);
+    font-weight: 400;
     line-height: $lh-hero-description;
   }
   &__link {
     display: inline-block;
-    padding: size(20) size(48);
-    font-size: fs(300);
+    padding: size(16) size(48);
+    font-size: fs(500);
+    font-weight: 400;
     text-transform: uppercase;
     color: inherit;
-    border: 4px solid clr(primary, normal);
+    border: 2px solid clr(primary, normal);
     border-radius: 10px;
     transition: 300ms ease-in-out;
     &:hover {

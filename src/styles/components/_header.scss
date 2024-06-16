@@ -2,5 +2,9 @@
 
 .header {
   @include d-flex($jc: space-between, $ai: center);
-  padding-top: 20px;
+  padding-block: size(8);
+  padding-inline: size(16);
+  &--dark {
+    background-color: clr(neutral, dark);
+  }
 }

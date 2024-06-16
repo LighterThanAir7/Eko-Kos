@@ -17,6 +17,14 @@
   }
 }
 
+.mt-80 {
+  margin-top: size(80);
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
 .text-bold {
   font-weight: $fw-700;
 }
