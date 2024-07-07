@@ -40,9 +40,6 @@ Download the repository as .zip, extract it and proceed from _Step 3_.
 
 Check out the finished website on [Netlify](https://eko-kos.netlify.app/).
 
-## Future plans
-The only thing left to do now is to find a hosting provider that will actually make this site go **live**. (Work in progess!)
-
 ## Found a bug?
 
 If you found an issue or would like to submit an improvement to this project, please submit an issue using the issues tab above. If you would like to submit a PR with a fix, reference the issue you created!
